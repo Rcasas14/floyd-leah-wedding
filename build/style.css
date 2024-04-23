@@ -1,0 +1,32 @@
+:root {
+  --white:#fff;
+  --text-color: #1F261E;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+}
+
+@media (min-width: 62rem) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 35.9988rem) {
+  .hide-for-mobile {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

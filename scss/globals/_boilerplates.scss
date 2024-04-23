@@ -1,0 +1,31 @@
+@use 'variables' as var;
+@use "../layout/media_queries" as *;
+
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+.hide-for-desktop {
+    @include breakpoint-up(lg){
+        display: none;
+    }
+}
+
+.hide-for-mobile {
+    @include breakpoint-down(sm){
+        display: none;
+    }
+}
