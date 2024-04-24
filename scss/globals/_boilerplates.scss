@@ -1,5 +1,5 @@
-@use 'variables' as var;
-@use "../layout/media_queries" as *;
+@use 'variables'as var;
+@use "../layout/media_queries"as *;
 
 
 html {
@@ -18,14 +18,42 @@ body {
     color: var(--text-color);
 }
 
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+a,
+a:visited,
+a:active,
+a:hover,
+p {
+    text-decoration: none !important;
+    //color: var(--text-color);
+    color: #000;
+}
+
+ul,
+ul::before,
+ul::after {
+    list-style: none;
+}
+
 .hide-for-desktop {
-    @include breakpoint-up(lg){
+    @include breakpoint-up(lg) {
         display: none;
     }
 }
 
 .hide-for-mobile {
-    @include breakpoint-down(sm){
+    @include breakpoint-down(sm) {
         display: none;
     }
 }
