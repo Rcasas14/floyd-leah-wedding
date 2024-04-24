@@ -1,0 +1,17 @@
+@use '../globals/variables'as var;
+@use '../layout/media_queries'as *;
+
+
+.hero-section {
+    z-index: -1;
+
+    .carousel-item {
+        height: 100vh;
+    }
+
+    .carousel-item img {
+        max-width: max-content;
+        height: 100%;
+        filter: brightness(0.7);
+    }
+}

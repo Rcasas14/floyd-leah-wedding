@@ -1,5 +1,36 @@
-.header{
+@use '../globals/variables'as var;
+@use '../layout/media_queries'as *;
+
+.header {
+    background-color: var(--dusty-white);
+
+    .me-300{
+        margin-right: 300px;
+    }
+
     .navbar-nav {
+        @include breakpoint-down(md){
+            display: flex;
+            flex-direction: column;
+        }
         transform: translate(0%, 45%);
+        .nav-item {
+            font-family: var.$amatic;
+            font-size: 30px;
+            font-weight: 700;
+
+            a {
+                color: #858585 !important;
+            }
+        }
+    }
+
+    .navbar-hamburger{
+        height: 2px;
+        width: 30px;
+        background-color: var(--dusty-white);
+        display: flex;
+        flex-direction: column;
+        margin: 5px 0;
     }
 }

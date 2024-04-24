@@ -1,13 +1,15 @@
 :root {
     --white:#fff;
-    --text-color: #1F261E;
-    // --p-color: #7A7A7A;
-    // --vestire-color: #fcfaf8;
-    // --sub-feature-color: #7c8059;
-    // --secondary-color:#1F261E;
+    --text-color: #3C586B;
+    --dusty-blue: #BED7DC;
+    --dusty-white: #D9D9D9;
     
 }
 
+.navbar-hamburger-icon {
+  background-image: url('../../images/hamburgermenu.png');
+}
+ 
 $spacer: 1rem;
 $spacers: (
   0: 0,
@@ -35,6 +37,6 @@ $breakpoints-down: (
   'xxl': 87.4988rem
 );
 
-$jost: 'Jost', sans-serif;
-$inter: 'Inter', sans-serif;
-$ibrra-real-nava: 'Ibarra Real Nova', serif;
+$amatic: 'Amatic SC', serif;
+$great-vibes: 'Great Vibes', cursive;
+$open-sans: 'Open Sans', sans-serif;

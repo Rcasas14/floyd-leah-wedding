@@ -36,8 +36,8 @@ a:active,
 a:hover,
 p {
     text-decoration: none !important;
-    //color: var(--text-color);
-    color: #000;
+    color: var(--text-color);
+    
 }
 
 ul,
@@ -48,6 +48,11 @@ ul::after {
 
 .hide-for-desktop {
     @include breakpoint-up(lg) {
+        display: none;
+    }
+}
+.hide-for-tablet {
+    @include breakpoint-up(md) {
         display: none;
     }
 }
