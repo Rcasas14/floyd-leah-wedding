@@ -70,6 +70,14 @@ ul::after {
   }
 }
 
+.mobile-padding {
+  padding: 0 1rem;
+}
+
+.top-right-padding {
+  padding: 3.125rem 0;
+}
+
 .header {
   background-color: var(--dusty-white);
 }
@@ -103,7 +111,7 @@ ul::after {
 }
 
 .hero-section {
-  z-index: -1;
+  position: relative;
 }
 .hero-section .carousel-item {
   height: 100vh;
@@ -112,5 +120,60 @@ ul::after {
   max-width: -moz-max-content;
   max-width: max-content;
   height: 100%;
-  filter: brightness(0.7);
+  filter: brightness(0.6);
+}
+.hero-section .hero-title-wrapper {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--dusty-white);
+}
+.hero-section .hero-title-wrapper .hero-title {
+  font-size: 50px;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+}
+.hero-section .hero-title-wrapper .hero-date {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+.hero-section .hero-title-wrapper .hero-subtitle {
+  font-size: 40px;
+  font-family: "Amatic SC", serif;
+  font-weight: 700;
+}
+
+.second-section {
+  background-color: var(--dusty-blue);
+  color: var(--text-color);
+  height: 100%;
+}
+.second-section .hello-wrapper {
+  text-align: center;
+}
+.second-section .hello-wrapper h1 {
+  font-size: 3.125rem;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+}
+.second-section .hello-wrapper p {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 1rem;
+}
+.second-section .person-wrapper img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+.second-section .person-wrapper .solo-name {
+  font-size: 1.5rem;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */

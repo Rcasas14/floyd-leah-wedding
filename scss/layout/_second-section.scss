@@ -1,0 +1,35 @@
+@use '../globals/variables'as var;
+@use '../layout/media_queries'as *;
+
+.second-section{
+    background-color: var(--dusty-blue);
+    color: var(--text-color);
+    height: 100%;
+
+    .hello-wrapper{
+        text-align: center;
+        h1 {
+            font-size: 3.125rem;
+            font-family: var.$great-vibes;
+            font-weight: 400;
+        }
+        p{
+            font-family: var.$open-sans;
+            text-align: center;
+            font-size: 1rem;
+        }
+    }
+
+    .person-wrapper{
+        img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+        }
+
+        .solo-name{
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+    }
+}
