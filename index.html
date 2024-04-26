@@ -92,10 +92,11 @@
                     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
-                <div class="hero-title-wrapper">
-                    <h1 class="hero-title">Lea and Floyd</h1>
-                    <h3 class="hero-date">June 1st, 2024</h3>
-                    <h1 class="hero-subtitle">SAVE THE DATE</h1>
+                <div
+                    class="hero-title-wrapper position-absolute d-flex flex-column justify-content-center align-items-center">
+                    <h1 class="hero-title fw-normal">Lea and Floyd</h1>
+                    <h3 class="hero-date fw-normal">June 1st, 2024</h3>
+                    <h1 class="hero-subtitle fw-bold">SAVE THE DATE</h1>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item d-flex justify-content-center align-items-center active">
@@ -118,23 +119,45 @@
     </header>
 
     <section class="second-section mobile-padding">
-        <div class="container-fluid position-relative top-right-padding d-flex flex-column justify-content-center align-items-center second-wrapper">
-             <div class="hello-wrapper">
+        <div
+            class="container-fluid position-relative top-right-padding d-flex flex-column justify-content-center align-items-center second-wrapper">
+            <div class="hello-wrapper">
                 <h1>Hello</h1>
                 <p>You are invited to celebrate our wedding</p>
-             </div>
+            </div>
 
-             <div class="person-wrapper d-flex flex-column justify-content-center  align-items-center">
+            <div class="person-wrapper d-flex flex-column justify-content-center  align-items-center">
                 <img src="images/groom-face-solo.jpg" alt="" class="solo-face-img">
                 <div class="solo-name text-center py-2">Floyd</div>
-                <div class="default-text text-center pb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</div>
-             </div>
+                <div class="default-text text-center pb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                    do eiusmod tempor incididunt ut</div>
+            </div>
 
-             <div class="person-wrapper d-flex flex-column justify-content-center align-items-center">
+            <div class="person-wrapper d-flex flex-column justify-content-center align-items-center">
                 <img src="images/bride-face-solo.jpg" alt="" class="solo-face-img">
                 <div class="solo-name text-center py-2">Lea</div>
-                <div class="default-text text-center pb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</div>
-             </div>
+                <div class="default-text text-center pb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                    do eiusmod tempor incididunt ut</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="third-section position-relative">
+        <div class="location-title-wrapper d-flex flex-column justify-content-center align-items-center position-absolute">
+            <h1 class="text-center fw-normal text-white">The Location</h1>
+
+            <div class="location-address d-flex flex-row justify-content-start">
+                <img src="images/map-marker.svg" alt="">
+                <h2 class="fw-normal text-center text-white">Lispher inn, 111 Francisco St. Juna. Matina, Davao City</h2>
+            </div>
+            <div class="location-text text-center fw-normal text-white ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                do eiusmod tempor incididunt ut</div>
+        </div>
+
+        <div class="location-wrapper vh-100 position-relative">
+            <div class="location-bg-container d-flex justify-content-center align-items-center ">
+                <img src="images/the-location.jpg" class="d-block me-300" alt="">
+            </div>
         </div>
     </section>
 

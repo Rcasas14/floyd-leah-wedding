@@ -1,0 +1,56 @@
+@use '../globals/variables'as var;
+@use '../layout/media_queries'as *;
+
+.third-section {
+    .me-300 {
+        margin-right: 31.25rem;
+    }
+
+    .location-title-wrapper {
+        z-index: 2;
+        top: 17%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+
+        padding: 3.125rem 1rem;
+
+        .location-text {
+            padding: 1rem 0;
+            font-size: 20px;
+        }
+
+        h1 {
+            font-family: var.$great-vibes;
+            font-size: 3.125rem;
+
+        }
+
+        .location-address {
+            img {
+                width: 25px;
+                height: 25px;
+            }
+
+            h2 {
+                font-family: var.$open-sans;
+            }
+        }
+
+
+    }
+
+    .location-wrapper {
+        .location-bg-container {
+            position: relative;
+            overflow: hidden;
+
+            img {
+                max-width: max-content;
+                height: 100%;
+                filter: brightness(0.6);
+            }
+        }
+    }
+
+}
