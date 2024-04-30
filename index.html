@@ -143,23 +143,111 @@
     </section>
 
     <section class="third-section position-relative">
-        <div class="location-title-wrapper d-flex flex-column justify-content-center align-items-center position-absolute">
+        <div
+            class="location-title-wrapper d-flex flex-column justify-content-center align-items-center position-absolute">
             <h1 class="text-center fw-normal text-white">The Location</h1>
 
             <div class="location-address d-flex flex-row justify-content-start">
                 <img src="images/map-marker.svg" alt="">
-                <h2 class="fw-normal text-center text-white">Lispher inn, 111 Francisco St. Juna. Matina, Davao City</h2>
+                <h2 class="fw-normal text-center text-white">Lispher inn, 111 Francisco St. Juna. Matina, Davao City
+                </h2>
             </div>
-            <div class="location-text text-center fw-normal text-white ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+            <div class="location-text text-center fw-normal text-white ">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit, sed
                 do eiusmod tempor incididunt ut</div>
+
+            <div class="location-map-wrapper">
+                <iframe class="my-4"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d989.891614124591!2d125.59345754244256!3d7.060117554070728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f91642bc6ac679%3A0xf96cf7297a2a2ae9!2sLispher%20Inn!5e0!3m2!1sen!2sph!4v1714446928011!5m2!1sen!2sph"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
 
-        <div class="location-wrapper vh-100 position-relative">
+        <div class="location-wrapper position-relative">
             <div class="location-bg-container d-flex justify-content-center align-items-center ">
                 <img src="images/the-location.jpg" class="d-block me-300" alt="">
             </div>
         </div>
+
     </section>
+
+    <div class="fourth-section mobile-padding top-right-padding vh-100">
+        <div class="our-story-wrapper container-fluid">
+            <h3 class="above-title text-center my-1">Where the Magic Happened</h3>
+            <h1 class="our-story-title fw-normal my-3 text-center">Our Story</h1>
+            <div class="our-story-desc text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor
+                incididunt utLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do,
+            </div>
+        </div>
+
+        <div class="our-story-carousel-wrapper mobile-padding">
+            <div id="ourStoryBlock" class="carousel slide">
+                <!-- <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#ourStoryBlock" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#ourStoryBlock" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#ourStoryBlock" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div> -->
+                <div class="carousel-inner card my-3 overflow-hidden">
+                    <div class="carousel-item active">
+                        <div class="carousel-img-label-container position-relative">
+                            <img src="images/First-Meet.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-label z-2 position-absolute ">
+                                <h2 class="text-center fw-normal">First Meet</h2>
+                                <h5 class="text-center fw-normal">October 2, 2022</h5>
+                                <p class="text-center">Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="carousel-img-label-container position-relative">
+                            <img src="images/First-date.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-label z-2 position-absolute ">
+                                <h2 class="text-center fw-normal">First Date</h2>
+                                <h5 class="text-center fw-normal">October 2, 2022</h5>
+                                <p class="text-center">Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="carousel-img-label-container position-relative">
+                            <img src="images/In-relationship.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-label z-2 position-absolute ">
+                                <h2 class="text-center fw-normal">In Relationship</h2>
+                                <h5 class="text-center fw-normal">October 2, 2022</h5>
+                                <p class="text-center">Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="carousel-img-label-container position-relative">
+                            <img src="images/the-engagement.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-label z-2 position-absolute ">
+                                <h2 class="text-center fw-normal">The Engagement</h2>
+                                <h5 class="text-center fw-normal">October 2, 2022</h5>
+                                <p class="text-center">Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#ourStoryBlock"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#ourStoryBlock"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
 
 
     <!-- bootstrap CDN -->
