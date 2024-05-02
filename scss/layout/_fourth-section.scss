@@ -7,8 +7,6 @@
     height: 100%;
 
     .our-story-wrapper {
-
-
         .above-title {
             font-family: var.$open-sans;
             text-transform: uppercase;
@@ -29,11 +27,10 @@
     }
 
     .our-story-carousel-wrapper {
-        .carousel-item {
-            width: auto;
-        }
         .carousel-inner{
             border-radius: 10px;
+            height: 80%;
+            
         }
 
         .carousel-img-label-container {
@@ -41,7 +38,9 @@
                 max-width: max-content;
             }
             .carousel-label {
+                padding: 16px;
                 bottom: 0;
+                width: 100%;
                 background-color: #fff;
                 margin: auto;
                 color: var(--text-color);
@@ -54,6 +53,7 @@
                 }
                 
             }
+
         }
     }
 }

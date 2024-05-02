@@ -198,6 +198,12 @@ ul::after {
   width: 330px;
   height: 400px;
 }
+@media (min-width: 36rem) {
+  .third-section .location-map-wrapper iframe {
+    width: 600px;
+    height: 550px;
+  }
+}
 .third-section .location-wrapper .location-bg-container {
   height: 100vh;
   position: relative;
@@ -229,18 +235,18 @@ ul::after {
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
 }
-.fourth-section .our-story-carousel-wrapper .carousel-item {
-  width: auto;
-}
 .fourth-section .our-story-carousel-wrapper .carousel-inner {
   border-radius: 10px;
+  height: 80%;
 }
 .fourth-section .our-story-carousel-wrapper .carousel-img-label-container img {
   max-width: -moz-max-content;
   max-width: max-content;
 }
 .fourth-section .our-story-carousel-wrapper .carousel-img-label-container .carousel-label {
+  padding: 16px;
   bottom: 0;
+  width: 100%;
   background-color: #fff;
   margin: auto;
   color: var(--text-color);

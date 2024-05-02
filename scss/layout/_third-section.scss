@@ -44,9 +44,15 @@
         iframe{
             width: 330px;
             height: 400px;
+
+            @include breakpoint-up(sm){
+                width: 600px;
+                height: 550px;
+            }
         }
     }
-
+    
+    
     .location-wrapper {
         .location-bg-container {
             height: 100vh;
