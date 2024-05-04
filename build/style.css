@@ -256,4 +256,39 @@ ul::after {
 }
 .fourth-section .our-story-carousel-wrapper .carousel-img-label-container .carousel-label p {
   font-size: 1rem;
+}
+
+.fifth-section {
+  background-color: var(--dusty-blue);
+  color: var(--text-color);
+  height: 100%;
+}
+.fifth-section .wedding-gallery-label {
+  padding-bottom: 25px;
+}
+.fifth-section .above-title {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  opacity: 40%;
+}
+.fifth-section .wedding-gallery-title {
+  font-size: 50px;
+  font-family: "Great Vibes", cursive;
+}
+.fifth-section .wedding-gallery-desc {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+.fifth-section .wedding-gallery-content {
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.fifth-section .wedding-gallery-content .gallery-link {
+  height: 100%;
+}
+.fifth-section .wedding-gallery-content .gallery-link img {
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */
