@@ -6,7 +6,7 @@
     color: var(--text-color);
     height: 100%;
 
-    .wedding-gallery-label{
+    .wedding-gallery-label {
         padding-bottom: 25px;
     }
 
@@ -33,13 +33,33 @@
         grid-template-columns: 1fr;
         gap: 10px;
 
+        @include breakpoint-up(md) {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+        }
+
         .gallery-link {
             height: 100%;
+
             img {
                 border-radius: 5px;
                 width: 100%;
                 height: auto;
             }
+        }
+    }
+
+    .button-view-all {
+        margin: 1rem;
+
+        a {
+            font-family: var.$open-sans;
+            color: var(--text-color);
+            background-color: transparent !important;
+            padding: 14px 30px;
+            font-size: 18px;
+            border: 1px solid #000;
+
         }
     }
 }

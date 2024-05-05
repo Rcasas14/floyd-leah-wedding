@@ -1,0 +1,66 @@
+@use '../globals/variables'as var;
+@use '../layout/media_queries'as *;
+
+.six-section {
+
+    .best-wish-content {
+        color: var(--dusty-white);
+        z-index: 2;
+
+        .send-title {
+            font-size: 50px;
+            font-family: var.$great-vibes;
+        }
+
+        .send-desc {
+            font-size: 18px;
+            font-family: var.$open-sans;
+        }
+
+
+        .best-wish-form-wrapper {
+            color: var(--dusty-white);
+
+            .best-wish-form {
+
+                .form-label{
+                    font-family: var.$great-vibes;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+                .inp-to {
+                    ::placeholder{
+                        font-family: var.$great-vibes;
+                    }
+                }
+
+                .best-wish-textarea {
+                    textarea {
+                        height: 12.5rem;
+                    }
+                }
+
+                .best-btn {
+                    padding: 10px 25px;
+                    border: 1px solid #fff;
+                    border-radius: 5px;
+                    font-family: var.$open-sans;
+                }
+            }
+        }
+    }
+
+
+    .best-wish-img {
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            max-width: max-content;
+            height: 100%;
+            filter: brightness(0.6);
+        }
+    }
+
+}

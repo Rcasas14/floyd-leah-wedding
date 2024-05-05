@@ -1,0 +1,38 @@
+@use '../globals/variables'as var;
+@use '../layout/media_queries'as *;
+
+.seventh-section {
+    background-color: var(--dusty-white);
+    color: var(--text-color);
+    height: 100%;
+
+    .gift-ideas-wrapper {
+        .above-title {
+            font-family: var.$open-sans;
+            text-transform: uppercase;
+            font-size: 15px;
+            opacity: 40%;
+        }
+
+        .gift-ideas-title {
+            font-size: 50px;
+            font-family: var.$great-vibes;
+        }
+
+        .gift-ideas-desc {
+            font-size: 18px;
+            font-family: var.$open-sans;
+        }
+
+    }
+
+    .gift-qr-wrapper{
+        .qr-code-img{
+            img {
+                margin: auto;
+                width: 80%;
+            }
+        }
+    }
+
+}

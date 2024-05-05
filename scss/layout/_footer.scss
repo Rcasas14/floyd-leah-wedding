@@ -1,0 +1,67 @@
+@use '../globals/variables'as var;
+@use '../layout/media_queries'as *;
+
+.footer {
+    color: var(--dusty-white);
+    height: 100%;
+
+    .footer-wrapper {
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+    }
+
+    .footer-title {
+        font-size: 50px;
+        font-family: var.$great-vibes;
+    }
+
+    .footer-desc {
+        color: var(--dusty-white);
+        font-size: 16px;
+        font-family: var.$open-sans;
+    }
+
+    .footer-img {
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            max-width: max-content;
+            height: 100%;
+            filter: brightness(0.6);
+        }
+    }
+
+    .socmed-insta,
+    .socmed-facebook {
+        padding: 0 5px;
+
+        a {
+            color: #fff;
+        }
+    }
+
+    .footer-credits {
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+
+
+    .credits-auth {
+        font-size: 12px;
+    }
+
+    .github-icon {
+        text-align: center;
+        margin: auto;
+        a {
+            color: #fff;
+        }
+    }
+
+}

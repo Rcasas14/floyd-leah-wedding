@@ -284,6 +284,12 @@ ul::after {
   grid-template-columns: 1fr;
   gap: 10px;
 }
+@media (min-width: 48rem) {
+  .fifth-section .wedding-gallery-content {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+  }
+}
 .fifth-section .wedding-gallery-content .gallery-link {
   height: 100%;
 }
@@ -291,4 +297,172 @@ ul::after {
   border-radius: 5px;
   width: 100%;
   height: auto;
+}
+.fifth-section .button-view-all {
+  margin: 1rem;
+}
+.fifth-section .button-view-all a {
+  font-family: "Open Sans", sans-serif;
+  color: var(--text-color);
+  background-color: transparent !important;
+  padding: 14px 30px;
+  font-size: 18px;
+  border: 1px solid #000;
+}
+
+.hero-banner {
+  position: relative;
+}
+.hero-banner .carousel-item img {
+  width: 100%;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  height: auto;
+  filter: brightness(0.6);
+}
+.hero-banner .hero-title-wrapper {
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: var(--dusty-white);
+}
+.hero-banner .hero-title-wrapper .hero-title {
+  font-size: 50px;
+  font-family: "Great Vibes", cursive;
+}
+.hero-banner .hero-title-wrapper .hero-date {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+.hero-banner .hero-title-wrapper .hero-subtitle {
+  font-size: 40px;
+  font-family: "Amatic SC", serif;
+}
+
+.six-section .best-wish-content {
+  color: var(--dusty-white);
+  z-index: 2;
+}
+.six-section .best-wish-content .send-title {
+  font-size: 50px;
+  font-family: "Great Vibes", cursive;
+}
+.six-section .best-wish-content .send-desc {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+.six-section .best-wish-content .best-wish-form-wrapper {
+  color: var(--dusty-white);
+}
+.six-section .best-wish-content .best-wish-form-wrapper .best-wish-form .form-label {
+  font-family: "Great Vibes", cursive;
+  font-size: 18px;
+  font-weight: 600;
+}
+.six-section .best-wish-content .best-wish-form-wrapper .best-wish-form .inp-to ::-moz-placeholder {
+  font-family: "Great Vibes", cursive;
+}
+.six-section .best-wish-content .best-wish-form-wrapper .best-wish-form .inp-to ::placeholder {
+  font-family: "Great Vibes", cursive;
+}
+.six-section .best-wish-content .best-wish-form-wrapper .best-wish-form .best-wish-textarea textarea {
+  height: 12.5rem;
+}
+.six-section .best-wish-content .best-wish-form-wrapper .best-wish-form .best-btn {
+  padding: 10px 25px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+}
+.six-section .best-wish-img {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.six-section .best-wish-img img {
+  max-width: -moz-max-content;
+  max-width: max-content;
+  height: 100%;
+  filter: brightness(0.6);
+}
+
+.seventh-section {
+  background-color: var(--dusty-white);
+  color: var(--text-color);
+  height: 100%;
+}
+.seventh-section .gift-ideas-wrapper .above-title {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  opacity: 40%;
+}
+.seventh-section .gift-ideas-wrapper .gift-ideas-title {
+  font-size: 50px;
+  font-family: "Great Vibes", cursive;
+}
+.seventh-section .gift-ideas-wrapper .gift-ideas-desc {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+.seventh-section .gift-qr-wrapper .qr-code-img img {
+  margin: auto;
+  width: 80%;
+}
+
+.footer {
+  color: var(--dusty-white);
+  height: 100%;
+}
+.footer .footer-wrapper {
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+.footer .footer-title {
+  font-size: 50px;
+  font-family: "Great Vibes", cursive;
+}
+.footer .footer-desc {
+  color: var(--dusty-white);
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+.footer .footer-img {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.footer .footer-img img {
+  max-width: -moz-max-content;
+  max-width: max-content;
+  height: 100%;
+  filter: brightness(0.6);
+}
+.footer .socmed-insta,
+.footer .socmed-facebook {
+  padding: 0 5px;
+}
+.footer .socmed-insta a,
+.footer .socmed-facebook a {
+  color: #fff;
+}
+.footer .footer-credits {
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+.footer .credits-auth {
+  font-size: 12px;
+}
+.footer .github-icon {
+  text-align: center;
+  margin: auto;
+}
+.footer .github-icon a {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
