@@ -4,10 +4,7 @@
 .header {
     background-color: var(--dusty-white);
 
-    .me-300{
-        margin-right: 300px;
-    }
-
+    
     .navbar-nav {
         @include breakpoint-down(md){
             display: flex;

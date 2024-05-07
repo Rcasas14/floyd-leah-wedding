@@ -2,6 +2,7 @@
 @use '../layout/media_queries'as *;
 
 .six-section {
+    height: auto;
 
     .best-wish-content {
         color: var(--dusty-white);
