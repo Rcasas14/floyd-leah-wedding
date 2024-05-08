@@ -1,35 +1,142 @@
 @use '../globals/variables'as var;
 @use '../layout/media_queries'as *;
 
-.second-section{
+.second-section {
     background-color: var(--dusty-blue);
     color: var(--text-color);
     height: 100%;
 
-    .hello-wrapper{
+    .second-wrapper {
+        @include breakpoint-up(md) {
+            height: 53vh;
+        }
+    }
+
+    .hello-wrapper {
         text-align: center;
+
         h1 {
             font-size: 3.125rem;
             font-family: var.$great-vibes;
             font-weight: 400;
+
+            @include breakpoint-up(md) {
+                font-size: 3.75rem;
+            }
         }
-        p{
+
+        p {
             font-family: var.$open-sans;
             text-align: center;
             font-size: 1rem;
+
+            @include breakpoint-up(md) {
+                font-size: 1.5rem;
+            }
         }
     }
 
-    .person-wrapper{
+    .bride-and-groom {
+        @include breakpoint-up(md) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .person-wrapper {
+        @include breakpoint-down(sm){
+            justify-content: center;
+        }
+        @include breakpoint-up(md) {
+            padding:0 18px;
+        }
         img {
             width: 130px;
             height: 130px;
             border-radius: 50%;
+
+            @include breakpoint-up(md) {
+                width: 170px;
+                height: 170px;
+            }
         }
 
-        .solo-name{
+        .solo-name {
             font-size: 1.5rem;
             font-weight: 600;
+
+            @include breakpoint-up(lg) {
+                font-size: 2rem;
+            }
+
+            @include breakpoint-down(sm) {
+                text-align: center;
+            }
+        }
+    }
+
+    .person-floyd {
+        flex-direction: column;
+
+        @include breakpoint-up(md) {
+            flex-direction: row-reverse;
+            font-size: 1.25rem;
+        }
+    }
+
+    .floyd-desc {
+        
+        @include breakpoint-up(md) {
+            padding-right: 1.875rem;
+            width: 60%;
+        }
+
+        p {
+            @include breakpoint-up(md) {
+                text-align: right;
+            }
+
+            @include breakpoint-down(sm) {
+                text-align: center;
+            }
+
+        }
+    }
+
+    .person-lea {
+        flex-direction: column;
+
+        @include breakpoint-up(md) {
+            flex-direction: row;
+            font-size: 1.25rem;
+        }
+    }
+
+    .lea-desc {
+        
+        @include breakpoint-up(md) {
+            padding-left: 1.875rem;
+            width: 60%;
+        }
+
+        p {
+            @include breakpoint-up(md) {
+                text-align: left;
+            }
+
+            @include breakpoint-down(sm) {
+                text-align: center;
+            }
+
+        }
+    }
+
+    .heart-icon {
+        svg {
+            width: 100%;
+            height: 3.125rem;
         }
     }
 }

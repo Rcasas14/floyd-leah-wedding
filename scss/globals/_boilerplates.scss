@@ -71,4 +71,8 @@ ul::after {
 
 .top-right-padding {
     padding: 3.125rem 0;
+
+    @include breakpoint-up(lg) {
+        padding: 5rem 0;
+    }
 }
