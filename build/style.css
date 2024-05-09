@@ -345,6 +345,11 @@ ul::after {
 .third-section .me-300 {
   margin-right: 31.25rem;
 }
+@media (min-width: 62rem) {
+  .third-section .me-300 {
+    margin-right: 0;
+  }
+}
 .third-section .location-title-wrapper {
   z-index: 2;
   top: 50%;
@@ -357,25 +362,47 @@ ul::after {
   padding: 1rem 0;
   font-size: 20px;
 }
+@media (min-width: 62rem) {
+  .third-section .location-title-wrapper .location-text {
+    font-size: 24px;
+  }
+}
 .third-section .location-title-wrapper h1 {
   font-family: "Great Vibes", cursive;
   font-size: 3.125rem;
+}
+@media (min-width: 62rem) {
+  .third-section .location-title-wrapper h1 {
+    font-size: 5rem;
+  }
 }
 .third-section .location-title-wrapper .location-address img {
   width: 25px;
   height: 25px;
 }
+@media (min-width: 62rem) {
+  .third-section .location-title-wrapper .location-address img {
+    width: 50px;
+    height: 50px;
+  }
+}
 .third-section .location-title-wrapper .location-address h2 {
   font-family: "Open Sans", sans-serif;
 }
 .third-section .location-map-wrapper iframe {
-  width: 330px;
-  height: 400px;
+  width: 23.125rem;
+  height: 25.625rem;
 }
-@media (min-width: 36rem) {
+@media (min-width: 48rem) {
   .third-section .location-map-wrapper iframe {
-    width: 600px;
-    height: 550px;
+    width: 37.5rem;
+    height: 34.375rem;
+  }
+}
+@media (min-width: 62rem) {
+  .third-section .location-map-wrapper iframe {
+    width: 77.875rem;
+    height: 31.25rem;
   }
 }
 .third-section .location-wrapper .location-bg-container {
@@ -389,11 +416,22 @@ ul::after {
   height: 100%;
   filter: brightness(0.6);
 }
+@media (min-width: 48rem) {
+  .third-section .location-wrapper .location-bg-container img {
+    height: auto;
+    width: 100%;
+  }
+}
 
 .fourth-section {
   background-color: var(--dusty-white);
   color: var(--text-color);
-  height: 100%;
+  height: 100vh;
+}
+@media (min-width: 48rem) {
+  .fourth-section {
+    height: 100%;
+  }
 }
 .fourth-section .our-story-wrapper .above-title {
   font-family: "Open Sans", sans-serif;
@@ -401,9 +439,20 @@ ul::after {
   font-size: 15px;
   opacity: 40%;
 }
+@media (min-width: 62rem) {
+  .fourth-section .our-story-wrapper .above-title {
+    font-size: 18px;
+    margin: 1rem 0;
+  }
+}
 .fourth-section .our-story-wrapper .our-story-title {
   font-size: 50px;
   font-family: "Great Vibes", cursive;
+}
+@media (min-width: 62rem) {
+  .fourth-section .our-story-wrapper .our-story-title {
+    font-size: 5rem;
+  }
 }
 .fourth-section .our-story-wrapper .our-story-desc {
   font-size: 18px;
@@ -430,6 +479,31 @@ ul::after {
 }
 .fourth-section .our-story-carousel-wrapper .carousel-img-label-container .carousel-label p {
   font-size: 1rem;
+}
+.fourth-section .our-story-timeline-item img {
+  width: 24%;
+  border-radius: 50%;
+  border: 10px solid var(--dusty-blue);
+}
+.fourth-section .our-story-timeline-item .our-story-timeline-desc p {
+  font-size: 18px;
+}
+.fourth-section .our-story-divider {
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 800px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.fourth-section .our-story-dot {
+  top: 20%;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
 }
 
 .fifth-section {

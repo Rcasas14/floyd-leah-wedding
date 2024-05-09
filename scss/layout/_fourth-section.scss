@@ -4,7 +4,11 @@
 .fourth-section {
     background-color: var(--dusty-white);
     color: var(--text-color);
-    height: 100%;
+    height: 100vh;
+
+    @include breakpoint-up(md) {
+        height: 100%;
+    }
 
     .our-story-wrapper {
         .above-title {
@@ -12,11 +16,20 @@
             text-transform: uppercase;
             font-size: 15px;
             opacity: 40%;
+
+            @include breakpoint-up(lg){
+                font-size: 18px;
+                margin: 1rem 0;
+            }
         }
 
         .our-story-title {
             font-size: 50px;
             font-family: var.$great-vibes;
+
+            @include breakpoint-up(lg){
+                font-size: 5rem;
+            }
         }
 
         .our-story-desc {
@@ -27,16 +40,17 @@
     }
 
     .our-story-carousel-wrapper {
-        .carousel-inner{
+        .carousel-inner {
             border-radius: 10px;
             height: 80%;
-            
+
         }
 
         .carousel-img-label-container {
             img {
                 max-width: max-content;
             }
+
             .carousel-label {
                 padding: 16px;
                 bottom: 0;
@@ -48,12 +62,50 @@
                 h5 {
                     font-size: 14px;
                 }
-                p{
+
+                p {
                     font-size: 1rem;
                 }
-                
+
             }
 
         }
     }
+
+    // fourth-section web-view START
+    .our-story-timeline-item {
+        img {
+            width: 24%;
+            border-radius: 50%;
+            border: 10px solid var(--dusty-blue);
+        }
+
+        .our-story-timeline-desc {
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .our-story-divider {
+        top: 50%;
+        left: 50%;
+        width: 2px;
+        height: 800px;
+        transform: translate(-50%, -50%);
+        background-color: rgba($color: #000000, $alpha: 0.4);
+    }
+
+    .our-story-dot {
+        top: 20%;
+        left: 50%;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        background-color: black;
+    }
+
+    // fourth-section web-view END
 }

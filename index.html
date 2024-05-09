@@ -194,7 +194,7 @@
             class="location-title-wrapper d-flex flex-column justify-content-center align-items-center position-absolute">
             <h1 class="text-center fw-normal text-white">The Location</h1>
 
-            <div class="location-address d-flex flex-row justify-content-start">
+            <div class="location-address d-flex flex-row justify-content-start align-items-center">
                 <img src="images/map-marker.svg" alt="">
                 <h2 class="fw-normal text-center text-white">Lispher inn, 111 Francisco St. Juna. Matina, Davao City
                 </h2>
@@ -218,7 +218,7 @@
 
     </section>
 
-    <div class="fourth-section mobile-padding top-right-padding vh-100">
+    <div class="fourth-section mobile-padding top-right-padding">
         <div class="our-story-wrapper container-fluid">
             <h3 class="above-title text-center my-1">Where the Magic Happened</h3>
             <h1 class="our-story-title fw-normal my-3 text-center">Our Story</h1>
@@ -228,7 +228,8 @@
             </div>
         </div>
 
-        <div class="our-story-carousel-wrapper mobile-padding">
+        <!-- fourth section mobile View START-->
+        <div class="our-story-carousel-wrapper mobile-padding hide-for-desktop">
             <div id="ourStoryBlock" class="carousel slide">
 
                 <div class="carousel-inner my-3 ">
@@ -291,7 +292,34 @@
             </div>
 
         </div>
+        <!-- fourth-section mobile view END -->
 
+        <!-- fourth-section web-view START -->
+        <div class="our-story-webview-wrapper hide-for-mobile">
+            <div class="our-story-timeline-inner z-2 my-3 d-flex justify-content-center align-items-center flex-column position-relative">
+                <div class="our-story-timeline-item d-flex flex-row-reverse justify-content-around">
+                    <img src="images/webview-First-Meet.jpg" alt="" class="d-block">
+                    <div class="our-story-timeline-desc d-flex flex-column align-items-center justify-content-center">
+                        <h2 class="text-end fw-normal">First Meet</h2>
+                        <h5 class="text-end fw-normal">October 2, 2022</h5>
+                        <p class="text-end">Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+
+                <div class="our-story-timeline-item d-flex flex-row justify-content-around">
+                    <img src="images/webview-First-date.jpg" alt="" class="d-block">
+                    <div class="our-story-timeline-desc d-flex flex-column align-items-center justify-content-center">
+                        <h2 class="text-end fw-normal">First Date</h2>
+                        <h5 class="text-end fw-normal">October 2, 2022</h5>
+                        <p class="text-end">Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                
+                <span class="our-story-dot z-2 position-absolute"></span>
+                <span class="our-story-divider z-2 position-absolute"></span>
+            </div>
+        </div>
+        <!-- fourth-section web-view END -->
 
     </div>
 

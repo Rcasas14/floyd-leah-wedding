@@ -4,6 +4,10 @@
 .third-section {
     .me-300 {
         margin-right: 31.25rem;
+
+        @include breakpoint-up(lg) {
+            margin-right: 0;
+        }
     }
 
     .location-title-wrapper {
@@ -18,11 +22,19 @@
         .location-text {
             padding: 1rem 0;
             font-size: 20px;
+
+            @include breakpoint-up(lg){
+                font-size: 24px;
+            }
         }
 
         h1 {
             font-family: var.$great-vibes;
             font-size: 3.125rem;
+
+            @include breakpoint-up(lg) {
+                font-size: 5rem;
+            }
 
         }
 
@@ -30,6 +42,11 @@
             img {
                 width: 25px;
                 height: 25px;
+
+                @include breakpoint-up(lg) {
+                    width: 50px;
+                    height: 50px;
+                }
             }
 
             h2 {
@@ -40,19 +57,24 @@
 
     }
 
-    .location-map-wrapper{
-        iframe{
-            width: 330px;
-            height: 400px;
+    .location-map-wrapper {
+        iframe {
+            width: 23.125rem;
+            height: 25.625rem;
 
-            @include breakpoint-up(sm){
-                width: 600px;
-                height: 550px;
+            @include breakpoint-up(md) {
+                width: 37.5rem;
+                height: 34.375rem;
+            }
+
+            @include breakpoint-up(lg) {
+                width: 77.875rem;
+                height: 31.25rem;
             }
         }
     }
-    
-    
+
+
     .location-wrapper {
         .location-bg-container {
             height: 100vh;
@@ -63,10 +85,13 @@
                 max-width: max-content;
                 height: 100%;
                 filter: brightness(0.6);
+
+                @include breakpoint-up(md) {
+                    height: auto;
+                    width: 100%;
+                }
             }
         }
     }
-
-    
 
 }
