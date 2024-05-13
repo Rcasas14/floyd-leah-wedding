@@ -69,10 +69,16 @@ ul::after {
     padding: 0 1rem;
 }
 
+.web-padding-lr{
+    @include breakpoint-up(lg){
+        padding: 0 220px;
+    }
+}
+
 .top-right-padding {
     padding: 3.125rem 0;
 
-    @include breakpoint-up(lg) {
+    @include breakpoint-up(md) {
         padding: 5rem 0;
     }
 }

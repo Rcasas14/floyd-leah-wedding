@@ -71,10 +71,16 @@ ul::after {
   padding: 0 1rem;
 }
 
+@media (min-width: 62rem) {
+  .web-padding-lr {
+    padding: 0 220px;
+  }
+}
+
 .top-right-padding {
   padding: 3.125rem 0;
 }
-@media (min-width: 62rem) {
+@media (min-width: 48rem) {
   .top-right-padding {
     padding: 5rem 0;
   }
@@ -100,7 +106,7 @@ ul::after {
   font-weight: 700;
 }
 .header .navbar-nav .nav-item a {
-  color: #fff;
+  color: var(--dusty-white);
 }
 @media (min-width: 48rem) {
   .header .navbar-nav .nav-item a {
@@ -108,7 +114,7 @@ ul::after {
     padding: 0 20px 5px 20px;
     color: var(--dusty-white);
     font-family: "Open Sans", sans-serif;
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 400;
   }
   .header .navbar-nav .nav-item a:hover {
@@ -158,8 +164,6 @@ ul::after {
   height: 100vh;
 }
 .hero-section .carousel-item img {
-  max-width: -moz-max-content;
-  max-width: max-content;
   height: 100%;
   filter: brightness(0.6);
 }
@@ -218,30 +222,25 @@ ul::after {
 }
 @media (min-width: 48rem) {
   .second-section .second-wrapper {
-    height: 53vh;
+    height: 65vh;
   }
 }
 .second-section .hello-wrapper {
   text-align: center;
 }
 .second-section .hello-wrapper h1 {
-  font-size: 3.125rem;
+  font-size: 50px;
   font-family: "Great Vibes", cursive;
   font-weight: 400;
-}
-@media (min-width: 48rem) {
-  .second-section .hello-wrapper h1 {
-    font-size: 3.75rem;
-  }
 }
 .second-section .hello-wrapper p {
   font-family: "Open Sans", sans-serif;
   text-align: center;
-  font-size: 1rem;
+  font-size: 16px;
 }
 @media (min-width: 48rem) {
   .second-section .hello-wrapper p {
-    font-size: 1.5rem;
+    font-size: 18px;
   }
 }
 @media (min-width: 48rem) {
@@ -259,28 +258,23 @@ ul::after {
 }
 @media (min-width: 48rem) {
   .second-section .person-wrapper {
-    padding: 0 18px;
+    padding: 0 1.125rem;
   }
 }
 .second-section .person-wrapper img {
-  width: 130px;
-  height: 130px;
+  width: 8.125rem;
+  height: 8.125rem;
   border-radius: 50%;
 }
 @media (min-width: 48rem) {
   .second-section .person-wrapper img {
-    width: 170px;
-    height: 170px;
+    width: 10.625rem;
+    height: 10.625rem;
   }
 }
 .second-section .person-wrapper .solo-name {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 600;
-}
-@media (min-width: 62rem) {
-  .second-section .person-wrapper .solo-name {
-    font-size: 2rem;
-  }
 }
 @media (max-width: 35.9988rem) {
   .second-section .person-wrapper .solo-name {
@@ -293,12 +287,12 @@ ul::after {
 @media (min-width: 48rem) {
   .second-section .person-floyd {
     flex-direction: row-reverse;
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }
 @media (min-width: 48rem) {
   .second-section .floyd-desc {
-    padding-right: 1.875rem;
+    padding-right: 30px;
     width: 60%;
   }
 }
@@ -318,12 +312,12 @@ ul::after {
 @media (min-width: 48rem) {
   .second-section .person-lea {
     flex-direction: row;
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }
 @media (min-width: 48rem) {
   .second-section .lea-desc {
-    padding-left: 1.875rem;
+    padding-left: 30px;
     width: 60%;
   }
 }
@@ -339,7 +333,7 @@ ul::after {
 }
 .second-section .heart-icon svg {
   width: 100%;
-  height: 3.125rem;
+  height: 50px;
 }
 
 .third-section .me-300 {
@@ -356,38 +350,41 @@ ul::after {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  padding: 3.125rem 1rem;
 }
 .third-section .location-title-wrapper .location-text {
-  padding: 1rem 0;
-  font-size: 20px;
+  font-size: 1rem;
 }
-@media (min-width: 62rem) {
+@media (min-width: 75rem) {
   .third-section .location-title-wrapper .location-text {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 .third-section .location-title-wrapper h1 {
   font-family: "Great Vibes", cursive;
   font-size: 3.125rem;
 }
-@media (min-width: 62rem) {
+@media (min-width: 75rem) {
   .third-section .location-title-wrapper h1 {
-    font-size: 5rem;
+    font-size: 3.75rem;
   }
 }
 .third-section .location-title-wrapper .location-address img {
-  width: 25px;
-  height: 25px;
+  width: 1.5625rem;
+  height: 1.5625rem;
 }
 @media (min-width: 62rem) {
   .third-section .location-title-wrapper .location-address img {
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
   }
 }
 .third-section .location-title-wrapper .location-address h2 {
   font-family: "Open Sans", sans-serif;
+}
+@media (min-width: 75rem) {
+  .third-section .location-title-wrapper .location-address h2 {
+    font-size: 20px;
+  }
 }
 .third-section .location-map-wrapper iframe {
   width: 23.125rem;
@@ -395,14 +392,8 @@ ul::after {
 }
 @media (min-width: 48rem) {
   .third-section .location-map-wrapper iframe {
-    width: 37.5rem;
-    height: 34.375rem;
-  }
-}
-@media (min-width: 62rem) {
-  .third-section .location-map-wrapper iframe {
-    width: 77.875rem;
-    height: 31.25rem;
+    width: 45rem;
+    height: 25.625rem;
   }
 }
 .third-section .location-wrapper .location-bg-container {
@@ -436,12 +427,12 @@ ul::after {
 .fourth-section .our-story-wrapper .above-title {
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 14px;
   opacity: 40%;
 }
 @media (min-width: 62rem) {
   .fourth-section .our-story-wrapper .above-title {
-    font-size: 18px;
+    font-size: 1rem;
     margin: 1rem 0;
   }
 }
@@ -451,11 +442,11 @@ ul::after {
 }
 @media (min-width: 62rem) {
   .fourth-section .our-story-wrapper .our-story-title {
-    font-size: 5rem;
+    font-size: 3.75rem;
   }
 }
 .fourth-section .our-story-wrapper .our-story-desc {
-  font-size: 18px;
+  font-size: 1rem;
   font-family: "Open Sans", sans-serif;
 }
 .fourth-section .our-story-carousel-wrapper .carousel-inner {
@@ -487,6 +478,9 @@ ul::after {
 }
 .fourth-section .our-story-timeline-item .our-story-timeline-desc p {
   font-size: 18px;
+}
+.fourth-section .our-story-margin {
+  margin: 180px 0;
 }
 .fourth-section .our-story-divider {
   top: 50%;
@@ -561,6 +555,11 @@ ul::after {
 .hero-banner {
   position: relative;
 }
+@media (min-width: 62rem) {
+  .hero-banner .carousel-item {
+    height: 50vh;
+  }
+}
 .hero-banner .carousel-item img {
   width: 100%;
   max-width: -moz-max-content;
@@ -591,10 +590,25 @@ ul::after {
 
 .six-section {
   height: auto;
+  position: relative;
+}
+@media (min-width: 62rem) {
+  .six-section .best-wish-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .six-section .best-wish-content {
   color: var(--dusty-white);
   z-index: 2;
+}
+@media (min-width: 62rem) {
+  .six-section .best-wish-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 .six-section .best-wish-content .send-title {
   font-size: 50px;
@@ -606,6 +620,14 @@ ul::after {
 }
 .six-section .best-wish-content .best-wish-form-wrapper {
   color: var(--dusty-white);
+}
+@media (min-width: 62rem) {
+  .six-section .best-wish-content .best-wish-form-wrapper {
+    width: 50%;
+  }
+}
+.six-section .best-wish-content .best-wish-form-wrapper .best-wish-form {
+  position: relative;
 }
 .six-section .best-wish-content .best-wish-form-wrapper .best-wish-form .form-label {
   font-family: "Great Vibes", cursive;
@@ -622,7 +644,7 @@ ul::after {
   height: 12.5rem;
 }
 .six-section .best-wish-content .best-wish-form-wrapper .best-wish-form .best-btn {
-  padding: 10px 25px;
+  padding: 10px 50px;
   border: 1px solid #fff;
   border-radius: 5px;
   font-family: "Open Sans", sans-serif;
@@ -632,11 +654,19 @@ ul::after {
   position: relative;
   overflow: hidden;
 }
+@media (min-width: 62rem) {
+  .six-section .best-wish-img {
+    height: 100%;
+  }
+}
 .six-section .best-wish-img img {
-  max-width: -moz-max-content;
-  max-width: max-content;
   height: 100%;
   filter: brightness(0.6);
+}
+@media (min-width: 62rem) {
+  .six-section .best-wish-img img {
+    width: 100%;
+  }
 }
 
 .seventh-section {
@@ -660,7 +690,18 @@ ul::after {
 }
 .seventh-section .gift-qr-wrapper .qr-code-img img {
   margin: auto;
-  width: 80%;
+  width: 60%;
+}
+@media (min-width: 62rem) {
+  .seventh-section .qr-codes-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.seventh-section .qr-codes-wrapper .qr-code-label {
+  font-size: 18px;
 }
 
 .footer {
@@ -688,10 +729,22 @@ ul::after {
   overflow: hidden;
 }
 .footer .footer-img img {
-  max-width: -moz-max-content;
-  max-width: max-content;
   height: 100%;
   filter: brightness(0.6);
+}
+@media (min-width: 48rem) {
+  .footer .footer-img img {
+    height: auto;
+    width: 100%;
+  }
+}
+.footer .wedding-socmed-icons {
+  justify-content: space-evenly;
+}
+@media (min-width: 48rem) {
+  .footer .wedding-socmed-icons {
+    justify-content: center;
+  }
 }
 .footer .socmed-insta,
 .footer .socmed-facebook {
@@ -706,6 +759,11 @@ ul::after {
   text-align: center;
   width: 100%;
   margin: auto;
+}
+@media (max-width: 47.9988rem) {
+  .footer .footer-credits {
+    padding: 80px 0;
+  }
 }
 .footer .credits-auth {
   font-size: 12px;

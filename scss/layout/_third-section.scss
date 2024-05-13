@@ -17,14 +17,14 @@
         transform: translate(-50%, -50%);
         width: 100%;
 
-        padding: 3.125rem 1rem;
+        // padding: 3.125rem 1rem;
 
         .location-text {
-            padding: 1rem 0;
-            font-size: 20px;
+            // padding: 1rem 0;
+            font-size: 1rem;
 
-            @include breakpoint-up(lg){
-                font-size: 24px;
+            @include breakpoint-up(xl) {
+                font-size: 18px;
             }
         }
 
@@ -32,24 +32,29 @@
             font-family: var.$great-vibes;
             font-size: 3.125rem;
 
-            @include breakpoint-up(lg) {
-                font-size: 5rem;
+
+            @include breakpoint-up(xl) {
+                font-size: 3.75rem;
             }
 
         }
 
         .location-address {
             img {
-                width: 25px;
-                height: 25px;
+                width: 1.5625rem;
+                height: 1.5625rem;
 
                 @include breakpoint-up(lg) {
-                    width: 50px;
-                    height: 50px;
+                    width: 3.125rem;
+                    height: 3.125rem;
                 }
             }
 
             h2 {
+                @include breakpoint-up(xl) {
+                    font-size: 20px;
+                }
+
                 font-family: var.$open-sans;
             }
         }
@@ -63,14 +68,14 @@
             height: 25.625rem;
 
             @include breakpoint-up(md) {
-                width: 37.5rem;
-                height: 34.375rem;
+                width: 45rem;
+                height: 25.625rem;
             }
 
-            @include breakpoint-up(lg) {
-                width: 77.875rem;
-                height: 31.25rem;
-            }
+            // @include breakpoint-up(lg) {
+            //     width: 77.875rem;
+            //     height: 31.25rem;
+            // }
         }
     }
 

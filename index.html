@@ -191,7 +191,7 @@
 
     <section class="third-section position-relative">
         <div
-            class="location-title-wrapper d-flex flex-column justify-content-center align-items-center position-absolute">
+            class="location-title-wrapper d-flex flex-column justify-content-center align-items-center position-absolute top-right-padding">
             <h1 class="text-center fw-normal text-white">The Location</h1>
 
             <div class="location-address d-flex flex-row justify-content-start align-items-center">
@@ -296,8 +296,9 @@
 
         <!-- fourth-section web-view START -->
         <div class="our-story-webview-wrapper hide-for-mobile">
-            <div class="our-story-timeline-inner z-2 my-3 d-flex justify-content-center align-items-center flex-column position-relative">
-                <div class="our-story-timeline-item d-flex flex-row-reverse justify-content-around">
+            <div
+                class="our-story-timeline-inner z-2 my-3 d-flex justify-content-center align-items-center flex-column position-relative">
+                <div class="our-story-timeline-item our-story-margin d-flex flex-row-reverse justify-content-around">
                     <img src="images/webview-First-Meet.jpg" alt="" class="d-block">
                     <div class="our-story-timeline-desc d-flex flex-column align-items-center justify-content-center">
                         <h2 class="text-end fw-normal">First Meet</h2>
@@ -306,7 +307,7 @@
                     </div>
                 </div>
 
-                <div class="our-story-timeline-item d-flex flex-row justify-content-around">
+                <div class="our-story-timeline-item our-story-margin d-flex flex-row justify-content-around">
                     <img src="images/webview-First-date.jpg" alt="" class="d-block">
                     <div class="our-story-timeline-desc d-flex flex-column align-items-center justify-content-center">
                         <h2 class="text-end fw-normal">First Date</h2>
@@ -314,16 +315,32 @@
                         <p class="text-end">Some representative placeholder content for the first slide.</p>
                     </div>
                 </div>
-                
-                <span class="our-story-dot z-2 position-absolute"></span>
-                <span class="our-story-divider z-2 position-absolute"></span>
+                <div class="our-story-timeline-item our-story-margin d-flex flex-row-reverse justify-content-around">
+                    <img src="images/webview-In-relationship.jpg" alt="" class="d-block">
+                    <div class="our-story-timeline-desc d-flex flex-column align-items-center justify-content-center">
+                        <h2 class="text-end fw-normal">In Relationship</h2>
+                        <h5 class="text-end fw-normal">October 2, 2022</h5>
+                        <p class="text-end">Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="our-story-timeline-item our-story-margin d-flex flex-row justify-content-around">
+                    <img src="images/webview-the-engagement.jpg" alt="" class="d-block">
+                    <div class="our-story-timeline-desc d-flex flex-column align-items-center justify-content-center">
+                        <h2 class="text-end fw-normal">The Engagement</h2>
+                        <h5 class="text-end fw-normal">October 2, 2022</h5>
+                        <p class="text-end">Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+
+                <!-- <span class="our-story-dot z-2 position-absolute"></span>
+                <span class="our-story-divider z-2 position-absolute"></span> -->
             </div>
         </div>
         <!-- fourth-section web-view END -->
 
     </div>
 
-    <section class="fifth-section mobile-padding top-right-padding">
+    <section class="fifth-section mobile-padding top-right-padding ">
         <div class="wedding-gallery-wrapper container-fluid">
             <div class="wedding-gallery-label">
                 <h3 class="above-title text-center my-1">Our Memories</h3>
@@ -333,7 +350,7 @@
                 </div>
             </div>
 
-            <div class="wedding-gallery-content d-grid row">
+            <div class="wedding-gallery-content d-grid web-padding-lr row">
                 <a href="images/wedding-gallery-1.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
                     class=" gallery-link" data-bs-ride="false">
                     <img src="images/wedding-gallery-1.jpg" class="img-fluid">
@@ -362,6 +379,11 @@
                     class=" gallery-link" data-bs-ride="false">
                     <img src="images/wedding-gallery-7.jpg" class="img-fluid">
                 </a>
+                <a href="images/wedding-gallery-8.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-8.jpg" class="img-fluid">
+                </a>
+
             </div>
             <div class="button-view-all d-flex justify-content-center align-items-center">
                 <a href="wedding-gallery.html" class="view-all-btn btn text-center ">View All</a>
@@ -370,12 +392,15 @@
     </section>
 
     <section class="six-section">
-        <div class="best-wish-content container-fluid position-absolute mobile-padding top-right-padding">
-            <h1 class="send-title text-center fw-normal ">Send Us Your Best Wish</h1>
-            <div class="send-desc text-center mobile-padding">
-                Send us your best wish, as we
-                embark this journey as married couple.
+        <div class="best-wish-content container-fluid position-absolute top-right-padding mobile-padding ">
+            <div class="best-wish-header">
+                <h1 class="send-title text-center fw-normal ">Send Us Your Best Wish</h1>
+                <div class="send-desc text-center mobile-padding">
+                    Send us your best wish, as we
+                    embark this journey as married couple.
+                </div>
             </div>
+
 
             <div class="best-wish-form-wrapper mobile-padding">
                 <form action="" class="best-wish-form" method="POST">
@@ -420,9 +445,9 @@
 
     <section class="seventh-section mobile-padding top-right-padding">
         <div class="gift-ideas-wrapper container-fluid">
-            <h3 class="above-title text-center my-1">Your Gifts</h3>
+            <h3 class="above-title text-center my-3">Your Gifts</h3>
             <h1 class="gift-ideas-title fw-normal my-3 text-center">Gift Ideas</h1>
-            <div class="gift-ideas-desc text-center">Your presense at our wedding means
+            <div class="gift-ideas-desc text-center my-3 web-padding-lr">Your presense at our wedding means
                 the world to us, and your love and support
                 are truly the most cherished gift.
                 However, if you wish to offer a gift,
@@ -430,22 +455,23 @@
                 a monetary contribution towards our life,
                 as we embark on this journey as husband and wife
             </div>
+            <h1 class="gift-ideas-title fw-normal my-5 text-center hide-for-mobile">Send Here</h1>
         </div>
 
-        <div class="gift-qr-wrapper d-flex flex-column justify-content-center align-items-center">
-            <div class="qr-code-img">
-                <img src="images/gift-qr-code1.png" class="d-block " alt="">
+        <div class="qr-codes-wrapper">
+            <div class="gift-qr-wrapper d-flex flex-column justify-content-center align-items-center">
+                <div class="qr-code-img m-3">
+                    <img src="images/qr-code-gcash.png" class="d-block " alt="">
+                </div>
+                <h2 class="qr-code-label text-center fw-bold">Gcash</h2>
             </div>
-            <h2 class="qr-code-label text-center fw-bold">Gcash</h2>
-            <h3 class="qr-code-detail text-center">09999999999</h3>
-        </div>
 
-        <div class="gift-qr-wrapper d-flex flex-column justify-content-center align-items-center">
-            <div class="qr-code-img">
-                <img src="images/gift-qr-code2.png" class="d-block " alt="">
+            <div class="gift-qr-wrapper d-flex flex-column justify-content-center align-items-center">
+                <div class="qr-code-img m-3">
+                    <img src="images/qr-code-union.png" class="d-block " alt="">
+                </div>
+                <h2 class="qr-code-label text-center fw-bold">Union Bank</h2>
             </div>
-            <h2 class="qr-code-label text-center fw-bold">BPI</h2>
-            <h3 class="qr-code-detail text-center">991293917731</h3>
         </div>
 
     </section>
@@ -455,8 +481,8 @@
         <div class="footer-wrapper container-fluid position-absolute z-2 mobile-padding top-right-padding">
             <h1 class="footer-title fw-normal my-3 text-center">Just Married!</h1>
             <p class="footer-desc text-center">Lea and Floyd</p>
-            <div class="d-flex flex-row justify-content-evenly align-items-center">
-                <div class="f-socmed-icons d-flex flex-row">
+            <div class="d-flex flex-row wedding-socmed-icons align-items-center">
+                <div class="f-socmed-icons me-3 d-flex flex-row">
                     <div class="socmed-insta">
                         <a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -477,7 +503,7 @@
                     </div>
 
                 </div>
-                <div class="l-socmed-icons d-flex flex-row">
+                <div class="l-socmed-icons ms-3 d-flex flex-row">
                     <a href="#">
                         <div class="socmed-insta">
                             <a href="#">
@@ -504,7 +530,7 @@
             </div>
 
         </div>
-        <div class="footer-credits position-absolute z-2 top-right-padding">
+        <div class="footer-credits position-absolute z-2">
             <div class="credits-auth text-center">Created By: Reymart Casas</div>
             <div class="github-icon">
                 <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"

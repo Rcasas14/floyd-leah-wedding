@@ -25,14 +25,14 @@
             font-weight: 700;
 
             a {
-                color:#fff;
+                color: var(--dusty-white);
 
                 @include breakpoint-up(md) {
                     position: relative;
                     padding: 0 20px 5px 20px;
                     color: var(--dusty-white);
                     font-family: var.$open-sans;
-                    font-size: 20px;
+                    font-size: 1rem;
                     font-weight: 400;
 
                     &:hover {

@@ -6,6 +6,7 @@
     color: var(--text-color);
     height: 100%;
 
+
     .gift-ideas-wrapper {
         .above-title {
             font-family: var.$open-sans;
@@ -26,12 +27,26 @@
 
     }
 
-    .gift-qr-wrapper{
-        .qr-code-img{
+    .gift-qr-wrapper {
+        .qr-code-img {
             img {
                 margin: auto;
-                width: 80%;
+                width: 60%;
             }
+        }
+    }
+
+    .qr-codes-wrapper {
+        @include breakpoint-up(lg) {
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .qr-code-label{
+            font-size: 18px;
         }
     }
 

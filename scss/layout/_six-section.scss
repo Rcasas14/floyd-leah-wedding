@@ -3,10 +3,28 @@
 
 .six-section {
     height: auto;
+    position: relative;
+
+    .best-wish-header {
+        @include breakpoint-up(lg) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
 
     .best-wish-content {
         color: var(--dusty-white);
         z-index: 2;
+
+        @include breakpoint-up(lg) {
+
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+        }
 
         .send-title {
             font-size: 50px;
@@ -22,15 +40,21 @@
         .best-wish-form-wrapper {
             color: var(--dusty-white);
 
-            .best-wish-form {
+            @include breakpoint-up(lg) {
+                width: 50%;
+            }
 
-                .form-label{
+            .best-wish-form {
+                position: relative;
+
+                .form-label {
                     font-family: var.$great-vibes;
                     font-size: 18px;
                     font-weight: 600;
                 }
+
                 .inp-to {
-                    ::placeholder{
+                    ::placeholder {
                         font-family: var.$great-vibes;
                     }
                 }
@@ -42,7 +66,7 @@
                 }
 
                 .best-btn {
-                    padding: 10px 25px;
+                    padding: 10px 50px;
                     border: 1px solid #fff;
                     border-radius: 5px;
                     font-family: var.$open-sans;
@@ -57,8 +81,17 @@
         position: relative;
         overflow: hidden;
 
+        @include breakpoint-up(lg) {
+            height: 100%;
+        }
+
         img {
-            max-width: max-content;
+
+            // max-width: max-content;
+            @include breakpoint-up(lg) {
+                width: 100%;
+            }
+
             height: 100%;
             filter: brightness(0.6);
         }
