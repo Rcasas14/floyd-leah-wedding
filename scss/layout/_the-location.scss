@@ -1,0 +1,37 @@
+@use '../globals/variables'as var;
+@use '../layout/media_queries'as *;
+
+.the-location {
+    .location-title-wrapper {
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+
+        // padding: 3.125rem 1rem;
+
+        .location-text {
+            // padding: 1rem 0;
+            font-size: 1rem;
+
+            @include breakpoint-up(xl) {
+                font-size: 18px;
+                width: 50%;
+                margin: auto;
+            }
+        }
+
+        h1 {
+            font-family: var.$great-vibes;
+            font-size: 3.125rem;
+
+
+            @include breakpoint-up(xl) {
+                font-size: 3.75rem;
+            }
+
+
+        }
+    }
+}

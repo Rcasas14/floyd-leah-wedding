@@ -25,6 +25,8 @@
 
             @include breakpoint-up(xl) {
                 font-size: 18px;
+                width: 50%;
+                margin: auto;
             }
         }
 
@@ -96,6 +98,20 @@
                     width: 100%;
                 }
             }
+        }
+    }
+
+    .button-location {
+        margin: 1rem;
+
+        a {
+            font-family: var.$open-sans;
+            color: var(--text-color);
+            background-color: transparent !important;
+            padding: 14px 30px;
+            font-size: 18px;
+            border: 1px solid #fff;
+
         }
     }
 

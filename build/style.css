@@ -222,7 +222,7 @@ ul::after {
 }
 @media (min-width: 48rem) {
   .second-section .second-wrapper {
-    height: 65vh;
+    height: auto;
   }
 }
 .second-section .hello-wrapper {
@@ -335,6 +335,18 @@ ul::after {
   width: 100%;
   height: 50px;
 }
+.second-section .introduction-wrapper .wed-introduction {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.8;
+}
+@media (min-width: 62rem) {
+  .second-section .introduction-wrapper .wed-introduction {
+    width: 50%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 2;
+  }
+}
 
 .third-section .me-300 {
   margin-right: 31.25rem;
@@ -357,6 +369,8 @@ ul::after {
 @media (min-width: 75rem) {
   .third-section .location-title-wrapper .location-text {
     font-size: 18px;
+    width: 50%;
+    margin: auto;
   }
 }
 .third-section .location-title-wrapper h1 {
@@ -412,6 +426,17 @@ ul::after {
     height: auto;
     width: 100%;
   }
+}
+.third-section .button-location {
+  margin: 1rem;
+}
+.third-section .button-location a {
+  font-family: "Open Sans", sans-serif;
+  color: var(--text-color);
+  background-color: transparent !important;
+  padding: 14px 30px;
+  font-size: 18px;
+  border: 1px solid #fff;
 }
 
 .fourth-section {
@@ -521,6 +546,12 @@ ul::after {
 .fifth-section .wedding-gallery-desc {
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
+}
+@media (min-width: 62rem) {
+  .fifth-section .wedding-gallery-desc {
+    width: 50%;
+    margin: auto;
+  }
 }
 .fifth-section .wedding-gallery-content {
   grid-template-columns: 1fr;
@@ -703,7 +734,23 @@ ul::after {
 .seventh-section .qr-codes-wrapper .qr-code-label {
   font-size: 18px;
 }
-
+.seventh-section .introduction-wrapper .wed-introduction {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.8;
+}
+@media (min-width: 62rem) {
+  .seventh-section .introduction-wrapper .wed-introduction {
+    width: 50%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 2;
+  }
+}
+.seventh-section .introduction-wrapper .wed-introduction span {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+  font-style: italic;
+}
 .footer {
   color: var(--dusty-white);
   height: 100%;

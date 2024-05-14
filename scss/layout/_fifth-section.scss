@@ -25,6 +25,11 @@
     .wedding-gallery-desc {
         font-size: 18px;
         font-family: var.$open-sans;
+
+        @include breakpoint-up(lg){
+            width: 50%;
+            margin: auto;
+        }
     }
 
 

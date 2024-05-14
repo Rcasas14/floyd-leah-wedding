@@ -8,9 +8,9 @@
 
     .second-wrapper {
         @include breakpoint-up(md) {
-            height: 65vh;
+            height: auto;
         }
-        
+
     }
 
     .hello-wrapper {
@@ -25,6 +25,7 @@
 
         p {
             font-family: var.$open-sans;
+            //font-style: italic;
             text-align: center;
             font-size: 16px;
 
@@ -44,12 +45,14 @@
     }
 
     .person-wrapper {
-        @include breakpoint-down(sm){
+        @include breakpoint-down(sm) {
             justify-content: center;
         }
+
         @include breakpoint-up(md) {
-            padding:0 1.125rem;
+            padding: 0 1.125rem;
         }
+
         img {
             width: 8.125rem;
             height: 8.125rem;
@@ -81,7 +84,7 @@
     }
 
     .floyd-desc {
-        
+
         @include breakpoint-up(md) {
             padding-right: 30px;
             width: 60%;
@@ -109,7 +112,7 @@
     }
 
     .lea-desc {
-        
+
         @include breakpoint-up(md) {
             padding-left: 30px;
             width: 60%;
@@ -131,6 +134,23 @@
         svg {
             width: 100%;
             height: 50px;
+        }
+    }
+
+    .introduction-wrapper {
+        .wed-introduction {
+
+            font-family: var.$open-sans;
+            line-height: 1.8;
+            
+            @include breakpoint-up(lg) {
+                width: 50%;
+                margin: auto;
+                font-size: 18px;
+                line-height: 2;
+                
+            }
+
         }
     }
 }
