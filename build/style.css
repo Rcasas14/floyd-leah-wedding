@@ -415,6 +415,11 @@ ul::after {
   position: relative;
   overflow: hidden;
 }
+@media (min-width: 62rem) {
+  .third-section .location-wrapper .location-bg-container {
+    height: auto;
+  }
+}
 .third-section .location-wrapper .location-bg-container img {
   max-width: -moz-max-content;
   max-width: max-content;
@@ -559,7 +564,7 @@ ul::after {
 }
 @media (min-width: 48rem) {
   .fifth-section .wedding-gallery-content {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
   }
 }
@@ -617,6 +622,55 @@ ul::after {
 .hero-banner .hero-title-wrapper .hero-subtitle {
   font-size: 40px;
   font-family: "Amatic SC", serif;
+}
+
+.the-location {
+  background-color: var(--dusty-blue);
+  color: var(--text-color);
+  height: 100%;
+}
+.the-location .location-label {
+  padding-bottom: 25px;
+}
+.the-location .above-title {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  opacity: 40%;
+}
+.the-location .location-title {
+  font-size: 50px;
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+}
+.the-location .location-desc {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 2;
+}
+@media (min-width: 62rem) {
+  .the-location .location-desc {
+    width: 50%;
+    margin: auto;
+  }
+}
+.the-location .location-content {
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+@media (min-width: 48rem) {
+  .the-location .location-content {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+  }
+}
+.the-location .location-content .gallery-link {
+  height: 100%;
+}
+.the-location .location-content .gallery-link img {
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
 }
 
 .six-section {

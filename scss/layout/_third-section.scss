@@ -88,6 +88,10 @@
             position: relative;
             overflow: hidden;
 
+            @include breakpoint-up(lg){
+                height: auto;
+            }
+
             img {
                 max-width: max-content;
                 height: 100%;

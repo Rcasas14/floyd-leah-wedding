@@ -2,36 +2,57 @@
 @use '../layout/media_queries'as *;
 
 .the-location {
-    .location-title-wrapper {
-        z-index: 2;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
+    background-color: var(--dusty-blue);
+    color: var(--text-color);
+    height: 100%;
 
-        // padding: 3.125rem 1rem;
+    .location-label {
+        padding-bottom: 25px;
+    }
 
-        .location-text {
-            // padding: 1rem 0;
-            font-size: 1rem;
+    .above-title {
+        font-family: var.$open-sans;
+        text-transform: uppercase;
+        font-size: 15px;
+        opacity: 40%;
+    }
 
-            @include breakpoint-up(xl) {
-                font-size: 18px;
-                width: 50%;
-                margin: auto;
-            }
+    .location-title {
+        font-size: 50px;
+        font-family: var.$cormorant-italic;
+        font-style: italic;
+    }
+
+    .location-desc {
+        font-size: 18px;
+        font-family: var.$open-sans;
+        line-height: 2;
+
+        @include breakpoint-up(lg) {
+            width: 50%;
+            margin: auto;
+        }
+    }
+
+
+    .location-content {
+
+        grid-template-columns: 1fr;
+        gap: 10px;
+
+        @include breakpoint-up(md) {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 10px;
         }
 
-        h1 {
-            font-family: var.$great-vibes;
-            font-size: 3.125rem;
+        .gallery-link {
+            height: 100%;
 
-
-            @include breakpoint-up(xl) {
-                font-size: 3.75rem;
+            img {
+                border-radius: 5px;
+                width: 100%;
+                height: auto;
             }
-
-
         }
     }
 }
