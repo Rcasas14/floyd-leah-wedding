@@ -23,3 +23,4 @@ galleryLinks.forEach((link) => {
     });
 });
 
+

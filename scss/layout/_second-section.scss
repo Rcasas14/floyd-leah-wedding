@@ -142,15 +142,17 @@
 
             font-family: var.$open-sans;
             line-height: 1.8;
-            
+
             @include breakpoint-up(lg) {
                 width: 50%;
                 margin: auto;
                 font-size: 18px;
                 line-height: 2;
-                
+
             }
 
         }
     }
+
+    
 }

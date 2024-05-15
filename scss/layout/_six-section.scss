@@ -5,6 +5,11 @@
     height: auto;
     position: relative;
 
+    @include breakpoint-up(md){
+        height: 100vh;
+        width: 100%;
+    }
+
     .best-wish-header {
         @include breakpoint-up(lg) {
             display: flex;
@@ -18,11 +23,12 @@
         z-index: 2;
 
         @include breakpoint-up(lg) {
-
-
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
 
         }
 
@@ -41,7 +47,7 @@
             color: var(--dusty-white);
 
             @include breakpoint-up(lg) {
-                width: 50%;
+                width: 40%;
             }
 
             .best-wish-form {
