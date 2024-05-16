@@ -28,24 +28,28 @@
     }
 
     .gift-qr-wrapper {
+        @include breakpoint-down(md) {
+            padding: 1rem 0;
+        }
+
         .qr-code-img {
             img {
                 margin: auto;
-                width: 60%;
+                width: 50%;
             }
         }
     }
 
     .qr-codes-wrapper {
         @include breakpoint-up(lg) {
-            
+
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
         }
 
-        .qr-code-label{
+        .qr-code-label {
             font-size: 18px;
         }
     }
@@ -55,13 +59,13 @@
 
             font-family: var.$open-sans;
             line-height: 1.8;
-            
+
             @include breakpoint-up(lg) {
                 width: 50%;
                 margin: auto;
                 font-size: 18px;
                 line-height: 2;
-                
+
             }
 
             span {

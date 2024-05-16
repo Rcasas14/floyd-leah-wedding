@@ -899,9 +899,14 @@ ul::after {
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
 }
+@media (max-width: 47.9988rem) {
+  .seventh-section .gift-qr-wrapper {
+    padding: 1rem 0;
+  }
+}
 .seventh-section .gift-qr-wrapper .qr-code-img img {
   margin: auto;
-  width: 60%;
+  width: 50%;
 }
 @media (min-width: 62rem) {
   .seventh-section .qr-codes-wrapper {
