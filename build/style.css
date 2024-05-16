@@ -422,6 +422,11 @@ ul::after {
   transform: translate(-50%, -50%);
   width: 100%;
 }
+@media (max-width: 35.9988rem) {
+  .third-section .location-title-wrapper {
+    height: 100vh;
+  }
+}
 .third-section .location-title-wrapper .location-text {
   font-size: 1rem;
 }
@@ -435,6 +440,11 @@ ul::after {
 .third-section .location-title-wrapper h1 {
   font-family: "Great Vibes", cursive;
   font-size: 3.125rem;
+}
+@media (max-width: ) {
+  .third-section .location-title-wrapper h1 {
+    font-size: 30px;
+  }
 }
 @media (min-width: 75rem) {
   .third-section .location-title-wrapper h1 {
@@ -460,8 +470,14 @@ ul::after {
   }
 }
 .third-section .location-map-wrapper iframe {
-  width: 23.125rem;
-  height: 25.625rem;
+  width: 370px;
+  height: 410px;
+}
+@media (max-width: 35.9988rem) {
+  .third-section .location-map-wrapper iframe {
+    width: 18.75rem;
+    height: 18.75rem;
+  }
 }
 @media (min-width: 48rem) {
   .third-section .location-map-wrapper iframe {
@@ -502,11 +518,17 @@ ul::after {
   font-size: 18px;
   border: 1px solid #fff;
 }
+@media (max-width: 35.9988rem) {
+  .third-section .button-location a {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
 
 .fourth-section {
   background-color: var(--dusty-white);
   color: var(--text-color);
-  height: 100vh;
+  height: auto;
 }
 @media (min-width: 48rem) {
   .fourth-section {
@@ -779,12 +801,22 @@ ul::after {
   }
 }
 .six-section .best-wish-content .send-title {
-  font-size: 50px;
+  font-size: 3.125rem;
   font-family: "Great Vibes", cursive;
+}
+@media (max-width: 35.9988rem) {
+  .six-section .best-wish-content .send-title {
+    font-size: 2.5rem;
+  }
 }
 .six-section .best-wish-content .send-desc {
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
+}
+@media (max-width: 35.9988rem) {
+  .six-section .best-wish-content .send-desc {
+    font-size: 1rem;
+  }
 }
 .six-section .best-wish-content .best-wish-form-wrapper {
   color: var(--dusty-white);
@@ -799,7 +831,7 @@ ul::after {
 }
 .six-section .best-wish-content .best-wish-form-wrapper .best-wish-form .form-label {
   font-family: "Great Vibes", cursive;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
 }
 .six-section .best-wish-content .best-wish-form-wrapper .best-wish-form .inp-to ::-moz-placeholder {
@@ -811,11 +843,22 @@ ul::after {
 .six-section .best-wish-content .best-wish-form-wrapper .best-wish-form .best-wish-textarea textarea {
   height: 12.5rem;
 }
+@media (max-width: 35.9988rem) {
+  .six-section .best-wish-content .best-wish-form-wrapper .best-wish-form .best-wish-textarea textarea {
+    height: 6.25rem;
+  }
+}
 .six-section .best-wish-content .best-wish-form-wrapper .best-wish-form .best-btn {
   padding: 10px 50px;
   border: 1px solid #fff;
   border-radius: 5px;
   font-family: "Open Sans", sans-serif;
+}
+@media (max-width: 35.9988rem) {
+  .six-section .best-wish-content .best-wish-form-wrapper .best-wish-form .best-btn {
+    padding: 5px 30px;
+    font-size: 1rem;
+  }
 }
 .six-section .best-wish-img {
   height: 100vh;
@@ -947,6 +990,11 @@ ul::after {
 @media (max-width: 47.9988rem) {
   .footer .footer-credits {
     padding: 80px 0;
+  }
+}
+@media (max-width: 35.9988rem) {
+  .footer .footer-credits {
+    padding: 5px 0;
   }
 }
 .footer .credits-auth {

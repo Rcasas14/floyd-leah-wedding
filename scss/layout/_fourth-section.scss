@@ -4,7 +4,7 @@
 .fourth-section {
     background-color: var(--dusty-white);
     color: var(--text-color);
-    height: 100vh;
+    height: auto;
 
     @include breakpoint-up(md) {
         height: 100%;

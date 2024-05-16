@@ -5,7 +5,7 @@
     height: auto;
     position: relative;
 
-    @include breakpoint-up(md){
+    @include breakpoint-up(md) {
         height: 100vh;
         width: 100%;
     }
@@ -33,13 +33,21 @@
         }
 
         .send-title {
-            font-size: 50px;
+            font-size: 3.125rem;
             font-family: var.$great-vibes;
+
+            @include breakpoint-down(sm) {
+                font-size: 2.5rem;
+            }
         }
 
         .send-desc {
             font-size: 18px;
             font-family: var.$open-sans;
+
+            @include breakpoint-down(sm) {
+                font-size: 1rem;
+            }
         }
 
 
@@ -55,7 +63,7 @@
 
                 .form-label {
                     font-family: var.$great-vibes;
-                    font-size: 18px;
+                    font-size: 1.125rem;
                     font-weight: 600;
                 }
 
@@ -68,6 +76,9 @@
                 .best-wish-textarea {
                     textarea {
                         height: 12.5rem;
+                        @include breakpoint-down(sm){
+                            height: 6.25rem;
+                        }
                     }
                 }
 
@@ -76,6 +87,11 @@
                     border: 1px solid #fff;
                     border-radius: 5px;
                     font-family: var.$open-sans;
+
+                    @include breakpoint-down(sm){
+                        padding: 5px 30px;
+                        font-size: 1rem;
+                    }
                 }
             }
         }

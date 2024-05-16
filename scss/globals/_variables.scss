@@ -20,6 +20,7 @@ $spacers: (
 
 $breakpoints-up: (
   xs: 0,
+  's': 20rem,
   'sm': 36rem,
   'md': 48rem,
   'lg': 62rem,
@@ -28,6 +29,7 @@ $breakpoints-up: (
 );
 $breakpoints-down: (
   xs: 0,
+  's': 20.0625rem,
   'sm': 35.9988rem,
   'md': 47.9988rem,
   'lg': 61.9988rem,

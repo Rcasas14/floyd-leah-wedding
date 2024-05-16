@@ -17,6 +17,10 @@
         transform: translate(-50%, -50%);
         width: 100%;
 
+        @include breakpoint-down(sm) {
+            height: 100vh;
+        }
+
         // padding: 3.125rem 1rem;
 
         .location-text {
@@ -33,6 +37,10 @@
         h1 {
             font-family: var.$great-vibes;
             font-size: 3.125rem;
+
+            @include breakpoint-down(ip-se) {
+                font-size: 30px;
+            }
 
 
             @include breakpoint-up(xl) {
@@ -66,18 +74,20 @@
 
     .location-map-wrapper {
         iframe {
-            width: 23.125rem;
-            height: 25.625rem;
+            width: 370px;
+            height: 410px;
+
+            @include breakpoint-down(sm) {
+                width: 18.75rem;
+                height: 18.75rem;
+            }
 
             @include breakpoint-up(md) {
                 width: 45rem;
                 height: 25.625rem;
             }
 
-            // @include breakpoint-up(lg) {
-            //     width: 77.875rem;
-            //     height: 31.25rem;
-            // }
+
         }
     }
 
@@ -88,7 +98,7 @@
             position: relative;
             overflow: hidden;
 
-            @include breakpoint-up(lg){
+            @include breakpoint-up(lg) {
                 height: auto;
             }
 
@@ -115,6 +125,11 @@
             padding: 14px 30px;
             font-size: 18px;
             border: 1px solid #fff;
+
+            @include breakpoint-down(sm) {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
 
         }
     }
