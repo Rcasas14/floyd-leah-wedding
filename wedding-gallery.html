@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Great+Vibes&family=Open+Sans:wght@300..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+
+    <!-- OWL Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Style Link -->
+    <link rel="stylesheet" href="build/style.css">
+    <title>Floyd And Leah</title>
+</head>
+
+<body class="body">
+
+    <header class="header position-relative">
+        <div class="web-view-navbar hide-for-mobile position-absolute z-2 top-right-padding">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="webnav-links container-fluid d-flex flex-row justify-content-center align-items-center">
+                    <!-- <a class="navbar-brand home-logo text-white" href="#">L & F</a> -->
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#the-location">Location</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#our-story">Our Story</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#wedding-gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#best-wish">Message Us</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+
+        </div>
+
+        <div class="mobile-navbar hide-for-desktop">
+            <nav class="navbar fixed-top">
+                <!-- start -- Mobile View NavBar -->
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <!-- <span class="navbar-toggler-icon"></span> -->
+                        <span class="navbar-hamburger"></span>
+                        <span class="navbar-hamburger"></span>
+                        <span class="navbar-hamburger"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <!-- Navbar body -->
+                            <ul class="navbar-nav flex-grow-1 justify-content-center align-items-center pe-3">
+                                <li class="nav-item"><a href="index.html" class="nav-link active"
+                                        aria-current="page">HOME</a></li>
+                                <li class="nav-item"><a href="index.html#the-location" class="nav-link">LOCATION</a></li>
+                                <li class="nav-item"><a href="index.html#our-story" class="nav-link">OUR STORY</a></li>
+                                <li class="nav-item"><a href="index.html#wedding-gallery" class="nav-link">GALLERY</a></li>
+                                <li class="nav-item"><a href="index.html#best-wish" class="nav-link">MESSAGE US</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- end -- Mobile View NavBar -->
+            </nav>
+        </div>
+
+        <div class="hero-banner">
+            <!-- start -- Hero Section Mobile View -->
+            <div id="heroCarousel" class="carousel carousel-fade slide" data-bs-ride="carousel" data-bs-touch="true">
+
+                <div
+                    class="hero-title-wrapper position-absolute d-flex flex-column justify-content-center align-items-center my-4">
+                    <h1 class="hero-title fw-normal hidden">Our Wedding Photos</h1>
+                    <h1 class="hero-subtitle fw-bold hidden-btm">Lea And Floyd</h1>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item d-flex justify-content-center align-items-center active">
+                        <img src="images/wedding-gallery-13.jpg" class="d-block " alt="wedding image">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="fifth-section mobile-padding top-right-padding">
+        <div class="wedding-gallery-wrapper container-fluid">
+            <div class="wedding-gallery-label">
+                <h3 class="above-title text-center my-1">Our Memories</h3>
+                <h1 class="wedding-gallery-title fw-normal my-3 text-center hidden">Wedding Gallery</h1>
+                <div class="wedding-gallery-desc text-center my-5 hidden-btm">Discover the cherished moments from our special day. From
+                    the heartfelt vows to the joyous celebrations, explore the beautiful memories captured in our
+                    prenuptial gallery.
+                </div>
+            </div>
+
+            <div class="wedding-gallery-content d-grid web-padding-lr row hidden-left">
+                <a href="images/wedding-gallery-1.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-1.jpg" class="img-fluid">
+                </a>
+
+                <a href="images/wedding-gallery-3.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-3.jpg" class="img-fluid">
+                </a>
+                <a href="images/wedding-gallery-4.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-4.jpg" class="img-fluid">
+                </a>
+                <a href="images/wedding-gallery-5.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-5.jpg" class="img-fluid">
+                </a>
+                <a href="images/wedding-gallery-2.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-2.jpg" class="img-fluid">
+                </a>
+                <a href="images/wedding-gallery-6.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-6.jpg" class="img-fluid">
+                </a>
+                <a href="images/wedding-gallery-7.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-7.jpg" class="img-fluid">
+                </a>
+                <a href="images/wedding-gallery-8.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-8.jpg" class="img-fluid">
+                </a>
+                <a href="images/wedding-gallery-9.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-9.jpg" class="img-fluid">
+                </a>
+                <a href="images/wedding-gallery-10.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-10.jpg" class="img-fluid">
+                </a>
+                <a href="images/wedding-gallery-11.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-11.jpg" class="img-fluid">
+                </a>
+                <a href="images/wedding-gallery-12.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-12.jpg" class="img-fluid">
+                </a>
+                <a href="images/wedding-gallery-13.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-13.jpg" class="img-fluid">
+                </a>
+                <a href="images/wedding-gallery-14.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-14.jpg" class="img-fluid">
+                </a>
+                <a href="images/wedding-gallery-15.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-15.jpg" class="img-fluid">
+                </a>
+                <a href="images/wedding-gallery-16.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-16.jpg" class="img-fluid">
+                </a>
+                <a href="images/wedding-gallery-17.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-17.jpg" class="img-fluid">
+                </a>
+                <a href="images/wedding-gallery-18.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-18.jpg" class="img-fluid">
+                </a>
+                <a href="images/wedding-gallery-19.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-19.jpg" class="img-fluid">
+                </a>
+                <a href="images/wedding-gallery-20.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-20.jpg" class="img-fluid">
+                </a>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer here -->
+
+
+    <!-- bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!-- Lightbox CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="js/script.js"></script>
+    <script defer src="js/animation-on-scroll.js"></script>
+    <!-- Owl Carousel Jquery script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+        integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

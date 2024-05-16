@@ -9,9 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Great+Vibes&family=Open+Sans:wght@300..800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Great+Vibes&family=Open+Sans:wght@300..800&display=swap"
         rel="stylesheet">
-
 
     <!-- Bootstrap Links -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -22,6 +21,15 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
 
+    <!-- OWL Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -31,18 +39,48 @@
     <title>Floyd And Leah</title>
 </head>
 
-<body class="body">
+<body class="body ">
 
     <header class="header position-relative">
+        <div class="web-view-navbar hide-for-mobile position-absolute z-2 top-right-padding">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="webnav-links container-fluid d-flex flex-row justify-content-center align-items-center">
+                    <!-- <a class="navbar-brand home-logo text-white" href="#">L & F</a> -->
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#the-location">Location</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#our-story">Our Story</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#wedding-gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#best-wish">Message Us</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+
+        </div>
 
         <div class="mobile-navbar hide-for-desktop">
-            <nav class="navbar bg-body-tertiary fixed-top">
+            <nav class="navbar fixed-top">
+                <!-- start -- Mobile View NavBar -->
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
                         aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <!-- <span class="navbar-toggler-icon"></span> -->
+                        <span class="navbar-hamburger"></span>
+                        <span class="navbar-hamburger"></span>
+                        <span class="navbar-hamburger"></span>
                     </button>
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                         aria-labelledby="offcanvasNavbarLabel">
@@ -57,18 +95,512 @@
                                 <li class="nav-item">
                                     <a href="#" class="nav-link active" aria-current="page">HOME</a>
                                 </li>
-                                <li class="nav-item"><a href="#" class="nav-link">LOCATION</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">OUR STORY</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">GALLERY</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">MESSAGE US</a></li>
+                                <li class="nav-item"><a href="#the-location" class="nav-link">LOCATION</a></li>
+                                <li class="nav-item"><a href="#our-story" class="nav-link">OUR STORY</a></li>
+                                <li class="nav-item"><a href="#wedding-gallery" class="nav-link">GALLERY</a></li>
+                                <li class="nav-item"><a href="#best-wish" class="nav-link">MESSAGE US</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
+                <!-- end -- Mobile View NavBar -->
             </nav>
         </div>
 
+        <div class="hero-section">
+            <!-- start -- Hero Section Mobile View -->
+            <div id="heroCarousel" class="carousel carousel-fade slide" data-bs-ride="carousel" data-bs-touch="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div
+                    class="hero-title-wrapper position-absolute d-flex flex-column justify-content-center align-items-center ">
+                    <h1 class="hero-title fw-normal hidden ">Lea and Floyd</h1>
+                    <h3 class="hero-date fw-normal hidden">June 14, 2024 Friday 1PM</h3>
+                    <h1 class="hero-subtitle fw-bold hidden ">SAVE THE DATE</h1>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item d-flex justify-content-center align-items-center active">
+                        <img src="images/hero-image1.jpg" class="d-block " alt="wedding image">
+
+                    </div>
+                    <div class="carousel-item d-flex justify-content-center align-items-center">
+                        <img src="images/hero-image2.jpg" class="d-block me-300 " alt="wedding image">
+
+                    </div>
+                    <div class="carousel-item d-flex justify-content-center align-items-center">
+                        <img src="images/hero-image3.jpg" class="d-block " alt="wedding image">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </header>
+
+    
+    <div class="floating-icon hide-for-mobile">
+        <a href="#"
+            class="floating-icon-link d-flex justify-content-center align-items-center position-fixed border rounded-circle border-opacity-50"><i
+                class="bi-arrow-up-short text-secondary-emphasis floating-icon-cont"></i></a>
+    </div>
+
+
+    <section class="second-section mobile-padding">
+        <div
+            class="container-fluid position-relative top-right-padding d-flex flex-column justify-content-center align-items-center second-wrapper">
+            <div class="hello-wrapper my-2">
+                <h1 class=" hidden">Hello,</h1>
+                <div class="introduction-wrapper my-4 position-relative">
+                    <p class="wed-introduction text-center hidden-left">
+                        "Dearest family and friends, your presence here today fills our hearts with immense gratitude
+                        and
+                        joy. Throughout the many significant moments in our lives, you've stood steadfastly by our
+                        sides,
+                        and today, as we embark on this extraordinary journey together, it means everything to have you
+                        here
+                        once more. Thank you for sharing in our love and happiness."
+                    </p>
+                </div>
+            </div>
+
+            <div class="container-fluid bride-and-groom">
+                <div class="person-wrapper person-floyd d-flex  align-items-center ">
+                    <img src="images/groom-face-solo.jpg" alt="" class="solo-face-img hidden-btm">
+                    <div class="floyd-desc d-flex flex-column hidden-btm">
+                        <p class="solo-name m-0 ">Floyd</p>
+                        <p class="default-text pb-2">is a kind-hearted and adventurous soul who brings joy and laughter
+                            to everyone around him.
+                    </div>
+                    </p>
+                </div>
+                <div class="heart-icon hide-for-mobile ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-heart-fill hidden" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                    </svg>
+                </div>
+
+                <div class="person-wrapper person-lea d-flex align-items-center ">
+                    <img src="images/bride-face-solo.jpg" alt="" class="solo-face-img hidden-btm">
+                    <div class="lea-desc hidden-btm">
+                        <div class="solo-name m-0">Lea</div>
+                        <p class="default-text  pb-2">is a compassionate and radiant person whose love and warmth
+                            light up every room she enters.
+                    </div>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="the-location" class="third-section position-relative">
+        <div
+            class="location-title-wrapper d-flex flex-column justify-content-center align-items-center position-absolute top-right-padding ">
+            <h1 class="text-center fw-normal text-white hidden">The Location</h1>
+
+            <div class="location-address d-flex flex-row justify-content-start align-items-center overflow-x-hidden">
+                <img src="images/map-marker.svg" alt="">
+                <h2 class="fw-normal text-center text-white hidden-right">The Perth Australia Temple
+                </h2>
+            </div>
+            <div class="location-text text-center fw-normal text-white mobile-padding hidden-btm">The Perth Australia
+                Temple, dedicated on May
+                20, 2001, by President Gordon B. Hinckley, is a sacred LDS Church building in Yokine, Perth, featuring
+                modern architecture with a single spire and white granite construction. It serves as a place for worship
+                and essential spiritual ceremonies, providing a peaceful environment for church members in the region.
+            </div>
+
+            <div class="location-map-wrapper">
+                <!-- <iframe class="my-4"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d989.891614124591!2d125.59345754244256!3d7.060117554070728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f91642bc6ac679%3A0xf96cf7297a2a2ae9!2sLispher%20Inn!5e0!3m2!1sen!2sph!4v1714446928011!5m2!1sen!2sph"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                <iframe class="my-4 hidden-left"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3386.9909698434612!2d115.86731817538995!3d-31.906842720131987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32b009601660a9%3A0xbc121c9a037749f!2sPerth%20Australia%20Temple!5e0!3m2!1sen!2sph!4v1715719674137!5m2!1sen!2sph"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="button-location d-flex justify-content-center align-items-center">
+                <a href="the-location.html" class="view-all-btn btn text-center text-white ">View Location</a>
+            </div>
+        </div>
+
+        <div class="location-wrapper position-relative">
+            <div class="location-bg-container d-flex justify-content-center align-items-center ">
+                <img src="images/the-location.jpg" class="d-block me-300" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <div id="our-story" class="fourth-section mobile-padding top-right-padding">
+        <div class="our-story-wrapper container-fluid">
+            <h3 class="above-title text-center my-1">Where the Magic Happened</h3>
+            <h1 class="our-story-title fw-normal my-3 text-center hidden">Our Story</h1>
+            <div class="our-story-desc text-center hidden-left">From the moment our eyes met, we knew our hearts had
+                found their
+                forever home, weaving a tapestry of love and dreams that will last a lifetime.
+            </div>
+        </div>
+
+        <!-- fourth section mobile View START-->
+        <div class="our-story-carousel-wrapper mobile-padding hide-for-desktop overflow-x-hidden">
+            <div id="ourStoryBlock" class="carousel slide hidden-right">
+                <div class="carousel-inner my-3 ">
+                    <div class="carousel-item active">
+                        <div class="carousel-img-label-container">
+                            <img src="images/First-Meet.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-label z-2 position-absolute ">
+                                <h2 class="text-center fw-normal">The Day Our Paths Crossed</h2>
+                                <!-- <h5 class="text-center fw-normal">October 2, 2022</h5> -->
+                                <p class="text-center">It was a magical moment when our souls intertwined, marking the
+                                    beginning of our beautiful journey together.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="carousel-img-label-container">
+                            <img src="images/First-date.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-label z-2 position-absolute">
+                                <h2 class="text-center fw-normal">The Beginning of Our Forever</h2>
+                                <!-- <h5 class="text-center fw-normal">October 2, 2022</h5> -->
+                                <p class="text-center">On our first date, sparks flew and time stood still, marking the
+                                    start of an unforgettable journey together.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="carousel-img-label-container">
+                            <img src="images/In-relationship.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-label z-2 position-absolute">
+                                <h2 class="text-center fw-normal">Growing Together in Love</h2>
+                                <!-- <h5 class="text-center fw-normal">October 2, 2022</h5> -->
+                                <p class="text-center">Every moment we share, our bond grows stronger, weaving a
+                                    tapestry of love and trust that defines our relationship.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="carousel-img-label-container">
+                            <img src="images/the-engagement.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-label z-2 position-absolute">
+                                <h2 class="text-center fw-normal">A Promise of Forever</h2>
+                                <!-- <h5 class="text-center fw-normal">October 2, 2022</h5> -->
+                                <p class="text-center">In a moment of pure magic, a promise was made to cherish and love
+                                    each other endlessly, sealing our hearts as one.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#ourStoryBlock"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#ourStoryBlock"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+        <!-- fourth-section mobile view END -->
+
+        <!-- fourth-section web-view START -->
+        <div id="our-story" class="our-story-webview-wrapper hide-for-mobile">
+            <div
+                class="our-story-timeline-inner z-2 my-3 d-flex justify-content-center align-items-center flex-column position-relative overflow-x-hidden">
+                <div class="our-story-timeline-item our-story-margin d-flex flex-row-reverse justify-content-around">
+                    <img src="images/webview-First-Meet.jpg" alt="" class="d-block hidden-right">
+                    <div
+                        class="our-story-timeline-desc d-flex flex-column align-items-center justify-content-center hidden-left">
+                        <h2 class="text-end fw-normal">The Day Our Paths Crossed</h2>
+                        <!-- <h5 class="text-end fw-normal">October 2, 2022</h5> -->
+                        <p class="text-end">It was a magical moment when our souls intertwined, marking the beginning of
+                            our beautiful journey together.</p>
+                    </div>
+                </div>
+
+                <div class="our-story-timeline-item our-story-margin d-flex flex-row justify-content-around">
+                    <img src="images/webview-First-date.jpg" alt="" class="d-block hidden-left">
+                    <div
+                        class="our-story-timeline-desc d-flex flex-column align-items-center justify-content-center hidden-right">
+                        <h2 class="text-end fw-normal">The Beginning of Our Forever</h2>
+                        <!-- <h5 class="text-end fw-normal">October 2, 2022</h5> -->
+                        <p class="text-end">On our first date, sparks flew and time stood still, marking the start of an
+                            unforgettable journey together.</p>
+                    </div>
+                </div>
+                <div class="our-story-timeline-item our-story-margin d-flex flex-row-reverse justify-content-around">
+                    <img src="images/webview-In-relationship.jpg" alt="" class="d-block hidden-right">
+                    <div
+                        class="our-story-timeline-desc d-flex flex-column align-items-center justify-content-center hidden-left">
+                        <h2 class="text-end fw-normal">Growing Together in Love</h2>
+                        <!-- <h5 class="text-end fw-normal">October 2, 2022</h5> -->
+                        <p class="text-end">Every moment we share, our bond grows stronger, weaving a tapestry of love
+                            and trust that defines our relationship.</p>
+                    </div>
+                </div>
+                <div class="our-story-timeline-item our-story-margin d-flex flex-row justify-content-around">
+                    <img src="images/webview-the-engagement.jpg" alt="" class="d-block hidden-left">
+                    <div
+                        class="our-story-timeline-desc d-flex flex-column align-items-center justify-content-center hidden-right">
+                        <h2 class="text-end fw-normal">A Promise of Forever</h2>
+                        <!-- <h5 class="text-end fw-normal">October 2, 2022</h5> -->
+                        <p class="text-end">In a moment of pure magic, a promise was made to cherish and love each other
+                            endlessly, sealing our hearts as one.</p>
+                    </div>
+                </div>
+
+                <!-- <span class="our-story-dot z-2 position-absolute"></span>
+                <span class="our-story-divider z-2 position-absolute"></span> -->
+            </div>
+        </div>
+        <!-- fourth-section web-view END -->
+
+    </div>
+
+    <section id="wedding-gallery" class="fifth-section mobile-padding top-right-padding ">
+        <div class="wedding-gallery-wrapper container-fluid">
+            <div class="wedding-gallery-label overflow-x-hidden">
+                <h3 class="above-title text-center my-1">Our Memories</h3>
+                <h1 class="wedding-gallery-title fw-normal my-3 text-center hidden-btm">Wedding Gallery</h1>
+                <div class="wedding-gallery-desc text-center my-5 hidden-right">Discover the cherished moments from our
+                    special day.
+                    From
+                    the heartfelt vows to the joyous celebrations, explore the beautiful memories captured in our
+                    prenuptial gallery.
+                </div>
+            </div>
+
+            <div class="wedding-gallery-content d-grid web-padding-lr row hidden-left">
+                <a href="images/wedding-gallery-1.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-1.jpg" class="img-fluid">
+                </a>
+
+                <a href="images/wedding-gallery-3.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-3.jpg" class="img-fluid">
+                </a>
+                <a href="images/wedding-gallery-4.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-4.jpg" class="img-fluid">
+                </a>
+                <a href="images/wedding-gallery-5.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-5.jpg" class="img-fluid">
+                </a>
+                <a href="images/wedding-gallery-2.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-2.jpg" class="img-fluid">
+                </a>
+                <a href="images/wedding-gallery-6.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-6.jpg" class="img-fluid">
+                </a>
+                <a href="images/wedding-gallery-7.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-7.jpg" class="img-fluid">
+                </a>
+                <a href="images/wedding-gallery-8.jpg" data-toggle="lightbox" data-gallery="wedding-gallery-photos"
+                    class=" gallery-link" data-bs-ride="false">
+                    <img src="images/wedding-gallery-8.jpg" class="img-fluid">
+                </a>
+
+            </div>
+            <div class="button-view-all d-flex justify-content-center align-items-center">
+                <a href="wedding-gallery.html" class="view-all-btn btn text-center hidden-btm ">View All</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="best-wish" class="six-section">
+        <div class="best-wish-content container-fluid position-absolute top-right-padding mobile-padding ">
+            <div class="best-wish-header hidden-left">
+                <h1 class="send-title text-center fw-normal ">Send Us Your Best Wish</h1>
+                <div class="send-desc text-center mobile-padding">
+                    Send us your best wish, as we
+                    embark this journey as married couple.
+                </div>
+            </div>
+
+
+            <div class="best-wish-form-wrapper mobile-padding overflow-x-hidden">
+                <form action="https://api.web3forms.com/submit" class="best-wish-form hidden-right method=" POST">
+                    <input type="hidden" name="access_key" value="6438478f-c8d7-4e4f-8f15-477ffa21ccfb">
+                    <fieldset disabled>
+                        <div class="mb-3">
+                            <label for="best-to" class="form-label">To:</label>
+                            <input type="email" class="form-control inp-to" id="best-to" placeholder="Lea and Floyd">
+                        </div>
+                    </fieldset>
+                    <div class="form-floating best-wish-textarea">
+                        <textarea name="message" class="form-control" placeholder="Leave your message here"
+                            id="floatingTextarea2" required></textarea>
+                        <label for="floatingTextarea2">Message</label>
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label mt-3 p-0">From:</label>
+
+                        <input type="text" class="form-control " name="first_name" id="best-name"
+                            aria-describedby="best-name" required>
+                        <div id="best-name" class="form-text text-white fw-bold">Name</div>
+                        <input type="text" class="form-control mt-3" name="last_name" id="best-lastname"
+                            aria-describedby="best-lastname" required>
+                        <div id="best-lastname" class="form-text text-white fw-bold">LastName</div>
+                    </div>
+                    <!-- <div class="mb-3">
+                        <label for="best-email" class="form-label">Email Address:</label>
+                        <input type="email" name="email" class="form-control" id="best-email" placeholder="youremail@email.com"
+                            required>
+
+                    </div> -->
+                    <button type="submit"
+                        class="btn best-btn text-white d-flex flex-column justify-content-center">Send</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="best-wish-img d-flex justify-content-center align-items-center">
+            <img src="images/best-wish-bg.jpg" class="d-block" alt="best wish image background">
+        </div>
+
+    </section>
+
+    <section id="gift-ideas" class="seventh-section mobile-padding top-right-padding">
+        <div class="gift-ideas-wrapper container-fluid overflow-x-hidden">
+            <h3 class="above-title text-center my-3">Your Gifts</h3>
+            <h1 class="gift-ideas-title fw-normal my-3 text-center hidden">Gift Ideas</h1>
+            <div class="introduction-wrapper position-relative">
+                <p class="wed-introduction my-5 text-center hidden-right">
+                    <span class="fw-bold d-block my-4 letter-start hidden-left">"Hello dear friends and family,</span>
+                    As we eagerly anticipate our upcoming wedding day, we wanted to share with you a heartfelt
+                    request.
+                    Instead of traditional gifts, we've created a discreet corner on our wedding website where you
+                    have
+                    the option to contribute a cash donation if you feel inclined.
+
+                    Your presence in our lives is already the greatest gift we could ever receive, and your love and
+                    support mean everything to us. We believe that sharing in this special occasion is what truly
+                    matters, and any contribution you choose to make will be deeply appreciated and cherished.
+
+                    We're incredibly grateful for the love and support you've shown us throughout our journey, and
+                    we're
+                    looking forward to celebrating with you soon.
+                    <span class="fw-bold my-4 d-block hidden-btm">With heartfelt gratitude,
+                        <br>Floyd and Lea"</span>
+                </p>
+            </div>
+
+            <h1 class="gift-ideas-title fw-normal my-5 text-center hide-for-mobile hidden-btm">Send Here</h1>
+        </div>
+
+        <div class="qr-codes-wrapper overflow-x-hidden">
+            <div class="gift-qr-wrapper d-flex flex-column justify-content-center align-items-center hidden-left">
+                <div class="qr-code-img m-3 ">
+                    <img src="images/qr-code-gcash.png" class="d-block " alt="">
+                </div>
+                <h2 class="qr-code-label text-center fw-bold">Gcash</h2>
+            </div>
+
+            <div class="gift-qr-wrapper d-flex flex-column justify-content-center align-items-center hidden-right">
+                <div class="qr-code-img m-3 ">
+                    <img src="images/qr-code-union.png" class="d-block " alt="">
+                </div>
+                <h2 class="qr-code-label text-center fw-bold">Union Bank</h2>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer position-relative">
+
+        <div
+            class="footer-wrapper container-fluid position-absolute z-2 mobile-padding top-right-padding overflow-x-hidden">
+            <h1 class="footer-title fw-normal my-3 text-center hidden">Just Married!</h1>
+            <p class="footer-desc text-center hidden-left">Lea and Floyd</p>
+            <div class="d-flex flex-row wedding-socmed-icons align-items-center">
+                <div class="f-socmed-icons me-3 d-flex flex-row hidden-left">
+                    <div class="socmed-insta">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg>
+                        </a>
+
+                    </div>
+                    <div class="socmed-facebook">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                            </svg></a>
+
+                    </div>
+
+                </div>
+                <div class="l-socmed-icons ms-3 d-flex flex-row hidden-right">
+                    <a href="#">
+                        <div class="socmed-insta">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                </svg>
+                            </a>
+
+                        </div>
+                    </a>
+
+                    <div class="socmed-facebook">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                            </svg></a>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-credits position-absolute z-2 hidden">
+            <div class="credits-auth text-center">Created By: Reymart Casas</div>
+            <div class="github-icon">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-github" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg></a>
+            </div>
+        </div>
+
+
+
+        <div class="footer-img d-flex justify-content-center align-items-center">
+            <img src="images/footer-bg.jpg" class="d-block" alt="footer image">
+        </div>
+    </footer>
+
 
     <!-- bootstrap CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -83,11 +615,24 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+    <!-- Lightbox CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/script.js"></script>
+
+    <script defer src="js/script.js"></script>
+    <script defer src="js/animation-on-scroll.js"></script>
+    <script defer src="js/form-reset.js"></script>
+
+    <!-- Owl Carousel Jquery script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+        integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>

@@ -1,0 +1,25 @@
+@use '../globals/variables'as var;
+@use '../layout/media_queries'as *;
+
+.floating-icon {
+    position: relative;
+
+    .floating-icon-link {
+        z-index: 999;
+        margin: 20px 30px;
+        bottom: 0;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        border: 1px dashed rgba(0,0,0, 0.3) !important;
+
+        .floating-icon-cont {
+            
+            font-size: 24px;
+            opacity: 0.8;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

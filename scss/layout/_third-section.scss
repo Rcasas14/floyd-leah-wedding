@@ -1,0 +1,122 @@
+@use '../globals/variables'as var;
+@use '../layout/media_queries'as *;
+
+.third-section {
+    .me-300 {
+        margin-right: 31.25rem;
+
+        @include breakpoint-up(lg) {
+            margin-right: 0;
+        }
+    }
+
+    .location-title-wrapper {
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+
+        // padding: 3.125rem 1rem;
+
+        .location-text {
+            // padding: 1rem 0;
+            font-size: 1rem;
+
+            @include breakpoint-up(xl) {
+                font-size: 18px;
+                width: 50%;
+                margin: auto;
+            }
+        }
+
+        h1 {
+            font-family: var.$great-vibes;
+            font-size: 3.125rem;
+
+
+            @include breakpoint-up(xl) {
+                font-size: 3.75rem;
+            }
+
+        }
+
+        .location-address {
+            img {
+                width: 1.5625rem;
+                height: 1.5625rem;
+
+                @include breakpoint-up(lg) {
+                    width: 3.125rem;
+                    height: 3.125rem;
+                }
+            }
+
+            h2 {
+                @include breakpoint-up(xl) {
+                    font-size: 20px;
+                }
+
+                font-family: var.$open-sans;
+            }
+        }
+
+
+    }
+
+    .location-map-wrapper {
+        iframe {
+            width: 23.125rem;
+            height: 25.625rem;
+
+            @include breakpoint-up(md) {
+                width: 45rem;
+                height: 25.625rem;
+            }
+
+            // @include breakpoint-up(lg) {
+            //     width: 77.875rem;
+            //     height: 31.25rem;
+            // }
+        }
+    }
+
+
+    .location-wrapper {
+        .location-bg-container {
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+
+            @include breakpoint-up(lg){
+                height: auto;
+            }
+
+            img {
+                max-width: max-content;
+                height: 100%;
+                filter: brightness(0.6);
+
+                @include breakpoint-up(md) {
+                    height: auto;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .button-location {
+        margin: 1rem;
+
+        a {
+            font-family: var.$open-sans;
+            color: var(--text-color);
+            background-color: transparent !important;
+            padding: 14px 30px;
+            font-size: 18px;
+            border: 1px solid #fff;
+
+        }
+    }
+
+}

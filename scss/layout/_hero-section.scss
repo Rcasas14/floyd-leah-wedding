@@ -1,0 +1,75 @@
+@use '../globals/variables'as var;
+@use '../layout/media_queries'as *;
+
+
+.hero-section {
+    position: relative;
+
+    .me-300 {
+        margin-right: 300px;
+
+        @include breakpoint-up(lg) {
+            margin-right: 0;
+        }
+    }
+
+    .carousel-item {
+        height: 100vh;
+    }
+
+    .carousel-item {
+        img {
+            @include breakpoint-up(md) {
+                width: 100%;
+            }
+
+            // max-width: max-content;
+            height: 100%;
+            filter: brightness(0.6);
+
+            @include breakpoint-up(lg) {
+                max-width: none;
+                height: auto;
+            }
+        }
+    }
+
+    .hero-title-wrapper {
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        color: #fff;
+
+        .hero-title {
+            @include breakpoint-up(lg) {
+                font-size: 124px;
+            }
+
+            font-size: 50px;
+            font-family: var.$great-vibes;
+
+        }
+
+        .hero-date {
+            @include breakpoint-up(lg) {
+                font-size: 30px;
+            }
+
+            font-size: 20px;
+            font-family: var.$open-sans;
+        }
+
+        .hero-subtitle {
+            @include breakpoint-up(lg) {
+                font-size: 100px;
+                padding: 40px 0;
+            }
+
+            font-size: 40px;
+            font-family: var.$amatic;
+
+        }
+    }
+}

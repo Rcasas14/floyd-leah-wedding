@@ -1,0 +1,49 @@
+@use '../globals/variables'as var;
+@use '../layout/media_queries'as *;
+
+
+.hero-banner {
+    position: relative;
+
+    // .carousel-item {
+    //     height: 100vh;
+    // }
+
+    .carousel-item {
+        @include breakpoint-up(lg){
+            height: 50vh;
+        }
+        img {
+            width: 100%;
+            max-width: max-content;
+            height: auto;
+            filter: brightness(0.6);
+        }
+    }
+
+    .hero-title-wrapper {
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        color: var(--dusty-white);
+
+        .hero-title {
+            font-size: 50px;
+            font-family: var.$great-vibes;
+
+        }
+
+        .hero-date {
+            font-size: 20px;
+            font-family: var.$open-sans;
+        }
+
+        .hero-subtitle {
+            font-size: 40px;
+            font-family: var.$amatic;
+
+        }
+    }
+}
