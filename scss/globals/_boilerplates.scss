@@ -90,6 +90,7 @@ ul::after {
 }
 
 .hidden {
+    
     opacity: 0;
     transition: all 1.5s;
     filter: blur(5px);
@@ -121,4 +122,5 @@ ul::after {
     filter: blur(0);
     transform: translateX(0);
     opacity: 1;
+    
 }

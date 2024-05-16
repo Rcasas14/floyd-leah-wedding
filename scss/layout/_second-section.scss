@@ -84,7 +84,6 @@
     }
 
     .floyd-desc {
-
         @include breakpoint-up(md) {
             padding-right: 30px;
             width: 60%;
@@ -112,7 +111,7 @@
     }
 
     .lea-desc {
-
+        transition-delay: 300ms;
         @include breakpoint-up(md) {
             padding-left: 30px;
             width: 60%;

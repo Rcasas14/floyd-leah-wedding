@@ -251,6 +251,26 @@ ul::after {
   }
 }
 
+.floating-icon {
+  position: relative;
+}
+.floating-icon .floating-icon-link {
+  z-index: 999;
+  margin: 20px 30px;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border: 1px dashed rgba(0, 0, 0, 0.3) !important;
+}
+.floating-icon .floating-icon-link .floating-icon-cont {
+  font-size: 24px;
+  opacity: 0.8;
+}
+.floating-icon .floating-icon-link .floating-icon-cont:hover {
+  cursor: pointer;
+}
+
 .second-section {
   background-color: var(--dusty-blue);
   color: var(--text-color);
@@ -350,6 +370,9 @@ ul::after {
     flex-direction: row;
     font-size: 1rem;
   }
+}
+.second-section .lea-desc {
+  transition-delay: 300ms;
 }
 @media (min-width: 48rem) {
   .second-section .lea-desc {
@@ -515,6 +538,13 @@ ul::after {
   font-size: 1rem;
   font-family: "Open Sans", sans-serif;
 }
+@media (min-width: 62rem) {
+  .fourth-section .our-story-wrapper .our-story-desc {
+    width: 50%;
+    margin: auto;
+    font-size: 1.125rem;
+  }
+}
 .fourth-section .our-story-carousel-wrapper .carousel-inner {
   border-radius: 10px;
   height: 80%;
@@ -541,9 +571,17 @@ ul::after {
   width: 24%;
   border-radius: 50%;
   border: 10px solid var(--dusty-blue);
+  margin: 0 auto;
 }
 .fourth-section .our-story-timeline-item .our-story-timeline-desc p {
   font-size: 18px;
+}
+@media (min-width: 62rem) {
+  .fourth-section .our-story-timeline-item .our-story-timeline-desc p {
+    padding: 1.25rem 0;
+    text-align: center !important;
+    width: 70%;
+  }
 }
 .fourth-section .our-story-margin {
   margin: 180px 0;
