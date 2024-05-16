@@ -6,7 +6,7 @@
     position: relative;
 
     .me-300 {
-        margin-right: 300px;
+        margin-right: 18.75rem;
 
         @include breakpoint-up(lg) {
             margin-right: 0;
@@ -44,30 +44,30 @@
 
         .hero-title {
             @include breakpoint-up(lg) {
-                font-size: 124px;
+                font-size: 7.75rem;
             }
 
-            font-size: 50px;
+            font-size: 3.125rem;
             font-family: var.$great-vibes;
 
         }
 
         .hero-date {
             @include breakpoint-up(lg) {
-                font-size: 30px;
+                font-size: 1.875rem;
             }
 
-            font-size: 20px;
+            font-size: 1.25rem;
             font-family: var.$open-sans;
         }
 
         .hero-subtitle {
             @include breakpoint-up(lg) {
-                font-size: 100px;
-                padding: 40px 0;
+                font-size: 6.25rem;
+                padding: 2.5rem 0;
             }
 
-            font-size: 40px;
+            font-size: 2.5rem;
             font-family: var.$amatic;
 
         }

@@ -42,7 +42,7 @@
         }
 
         .send-desc {
-            font-size: 18px;
+            font-size: 1.125rem;
             font-family: var.$open-sans;
 
             @include breakpoint-down(sm) {
@@ -83,14 +83,14 @@
                 }
 
                 .best-btn {
-                    padding: 10px 50px;
-                    border: 1px solid #fff;
-                    border-radius: 5px;
+                    padding: .625rem 3.125rem;
+                    border: .0625rem solid #fff;
+                    border-radius: .3125rem;
                     font-family: var.$open-sans;
 
                     @include breakpoint-down(sm){
-                        padding: 5px 30px;
-                        font-size: 1rem;
+                        padding: .3125rem 1.875rem;
+                        font-size: 16px;
                     }
                 }
             }

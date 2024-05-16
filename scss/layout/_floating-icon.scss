@@ -6,16 +6,16 @@
 
     .floating-icon-link {
         z-index: 999;
-        margin: 20px 30px;
+        margin: 1.25rem 1.875rem;
         bottom: 0;
         right: 0;
-        width: 40px;
-        height: 40px;
+        width: 2.5rem;
+        height: 2.5rem;
         border: 1px dashed rgba(0,0,0, 0.3) !important;
 
         .floating-icon-cont {
             
-            font-size: 24px;
+            font-size: 1.5rem;
             opacity: 0.8;
             &:hover {
                 cursor: pointer;
