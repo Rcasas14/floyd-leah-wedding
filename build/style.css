@@ -1007,8 +1007,24 @@ ul::after {
     padding: 0.3125rem 0;
   }
 }
+@media (min-width: 62rem) {
+  .footer .footer-credits {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.footer .footer-credits .credits-item {
+  padding: 0 20px;
+}
 .footer .credits-auth {
   font-size: 0.75rem;
+}
+.footer .credits-auth a {
+  color: var(--dusty-white);
+}
+.footer .credits-auth a:hover {
+  cursor: pointer;
 }
 .footer .github-icon {
   text-align: center;

@@ -72,11 +72,30 @@
         @include breakpoint-down(sm) {
             padding: .3125rem 0;
         }
+
+        @include breakpoint-up(lg) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .credits-item {
+            padding: 0 20px;
+        }
+
     }
 
 
     .credits-auth {
         font-size: .75rem;
+
+        a {
+            color: var(--dusty-white);
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
     }
 
     .github-icon {
