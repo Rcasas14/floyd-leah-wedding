@@ -11,17 +11,21 @@
         .above-title {
             font-family: var.$open-sans;
             text-transform: uppercase;
-            font-size: 15px;
+            font-size: .9375rem;
             opacity: 40%;
         }
 
         .gift-ideas-title {
-            font-size: 50px;
+            font-size: 3.125rem;
             font-family: var.$great-vibes;
+
+            @include breakpoint-down(sm){
+                font-size: 2.5rem;
+            }
         }
 
         .gift-ideas-desc {
-            font-size: 18px;
+            font-size: 1.125rem;
             font-family: var.$open-sans;
         }
 
@@ -77,14 +81,14 @@
             @include breakpoint-up(lg) {
                 width: 50%;
                 margin: auto;
-                font-size: 18px;
+                font-size: 1.125rem;
                 line-height: 2;
 
             }
 
             span {
                 font-family: var.$cormorant-italic;
-                font-size: 30px;
+                font-size: 1.875rem;
                 font-style: italic;
             }
 

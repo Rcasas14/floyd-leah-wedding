@@ -21,7 +21,7 @@
 
         .nav-item {
             font-family: var.$amatic;
-            font-size: 30px;
+            font-size: 1.875rem;
             font-weight: 700;
 
             a {
@@ -29,7 +29,7 @@
 
                 @include breakpoint-up(md) {
                     position: relative;
-                    padding: 0 20px 5px 20px;
+                    padding: 0 1.25rem .3125rem 1.25rem;
                     color: var(--dusty-white);
                     font-family: var.$open-sans;
                     font-size: 1rem;
@@ -69,11 +69,11 @@
     }
 
     .navbar-hamburger {
-        height: 2px;
-        width: 30px;
+        height: .125rem;
+        width: 1.875rem;
         background-color: var(--dusty-white);
         display: flex;
         flex-direction: column;
-        margin: 5px 0;
+        margin: .3125rem 0;
     }
 }

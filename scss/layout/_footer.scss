@@ -13,13 +13,13 @@
     }
 
     .footer-title {
-        font-size: 50px;
+        font-size: 3.125rem;
         font-family: var.$great-vibes;
     }
 
     .footer-desc {
         color: var(--dusty-white);
-        font-size: 16px;
+        font-size: 1rem;
         font-family: var.$open-sans;
     }
 
@@ -50,7 +50,7 @@
 
     .socmed-insta,
     .socmed-facebook {
-        padding: 0 5px;
+        padding: 0 .3125rem;
 
         a {
             color: #fff;
@@ -66,17 +66,36 @@
         margin: auto;
 
         @include breakpoint-down(md) {
-            padding: 80px 0;
+            padding: 5rem 0;
         }
 
         @include breakpoint-down(sm) {
-            padding: 5px 0;
+            padding: .3125rem 0;
         }
+
+        @include breakpoint-up(lg) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .credits-item {
+            padding: 0 20px;
+        }
+
     }
 
 
     .credits-auth {
-        font-size: 12px;
+        font-size: .75rem;
+
+        a {
+            color: var(--dusty-white);
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
     }
 
     .github-icon {

@@ -138,7 +138,7 @@ ul::after {
 }
 .header .navbar-nav .nav-item {
   font-family: "Amatic SC", serif;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 700;
 }
 .header .navbar-nav .nav-item a {
@@ -147,7 +147,7 @@ ul::after {
 @media (min-width: 48rem) {
   .header .navbar-nav .nav-item a {
     position: relative;
-    padding: 0 20px 5px 20px;
+    padding: 0 1.25rem 0.3125rem 1.25rem;
     color: var(--dusty-white);
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
@@ -177,19 +177,19 @@ ul::after {
   }
 }
 .header .navbar-hamburger {
-  height: 2px;
-  width: 30px;
+  height: 0.125rem;
+  width: 1.875rem;
   background-color: var(--dusty-white);
   display: flex;
   flex-direction: column;
-  margin: 5px 0;
+  margin: 0.3125rem 0;
 }
 
 .hero-section {
   position: relative;
 }
 .hero-section .me-300 {
-  margin-right: 300px;
+  margin-right: 18.75rem;
 }
 @media (min-width: 62rem) {
   .hero-section .me-300 {
@@ -223,31 +223,31 @@ ul::after {
   color: #fff;
 }
 .hero-section .hero-title-wrapper .hero-title {
-  font-size: 50px;
+  font-size: 3.125rem;
   font-family: "Great Vibes", cursive;
 }
 @media (min-width: 62rem) {
   .hero-section .hero-title-wrapper .hero-title {
-    font-size: 124px;
+    font-size: 7.75rem;
   }
 }
 .hero-section .hero-title-wrapper .hero-date {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: "Open Sans", sans-serif;
 }
 @media (min-width: 62rem) {
   .hero-section .hero-title-wrapper .hero-date {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
 .hero-section .hero-title-wrapper .hero-subtitle {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-family: "Amatic SC", serif;
 }
 @media (min-width: 62rem) {
   .hero-section .hero-title-wrapper .hero-subtitle {
-    font-size: 100px;
-    padding: 40px 0;
+    font-size: 6.25rem;
+    padding: 2.5rem 0;
   }
 }
 
@@ -256,15 +256,15 @@ ul::after {
 }
 .floating-icon .floating-icon-link {
   z-index: 999;
-  margin: 20px 30px;
+  margin: 1.25rem 1.875rem;
   bottom: 0;
   right: 0;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   border: 1px dashed rgba(0, 0, 0, 0.3) !important;
 }
 .floating-icon .floating-icon-link .floating-icon-cont {
-  font-size: 24px;
+  font-size: 1.5rem;
   opacity: 0.8;
 }
 .floating-icon .floating-icon-link .floating-icon-cont:hover {
@@ -296,7 +296,7 @@ ul::after {
 }
 @media (min-width: 48rem) {
   .second-section .hello-wrapper p {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 }
 @media (min-width: 48rem) {
@@ -329,7 +329,7 @@ ul::after {
   }
 }
 .second-section .person-wrapper .solo-name {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 @media (max-width: 35.9988rem) {
@@ -348,7 +348,7 @@ ul::after {
 }
 @media (min-width: 48rem) {
   .second-section .floyd-desc {
-    padding-right: 30px;
+    padding-right: 1.875rem;
     width: 60%;
   }
 }
@@ -376,7 +376,7 @@ ul::after {
 }
 @media (min-width: 48rem) {
   .second-section .lea-desc {
-    padding-left: 30px;
+    padding-left: 1.875rem;
     width: 60%;
   }
 }
@@ -392,7 +392,7 @@ ul::after {
 }
 .second-section .heart-icon svg {
   width: 100%;
-  height: 50px;
+  height: 3.125rem;
 }
 .second-section .introduction-wrapper .wed-introduction {
   font-family: "Open Sans", sans-serif;
@@ -402,7 +402,7 @@ ul::after {
   .second-section .introduction-wrapper .wed-introduction {
     width: 50%;
     margin: auto;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 2;
   }
 }
@@ -432,7 +432,7 @@ ul::after {
 }
 @media (min-width: 75rem) {
   .third-section .location-title-wrapper .location-text {
-    font-size: 18px;
+    font-size: 1.125rem;
     width: 50%;
     margin: auto;
   }
@@ -443,7 +443,7 @@ ul::after {
 }
 @media (max-width: ) {
   .third-section .location-title-wrapper h1 {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
 @media (min-width: 75rem) {
@@ -466,12 +466,12 @@ ul::after {
 }
 @media (min-width: 75rem) {
   .third-section .location-title-wrapper .location-address h2 {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 .third-section .location-map-wrapper iframe {
-  width: 370px;
-  height: 410px;
+  width: 23.125rem;
+  height: 25.625rem;
 }
 @media (max-width: 35.9988rem) {
   .third-section .location-map-wrapper iframe {
@@ -514,14 +514,14 @@ ul::after {
   font-family: "Open Sans", sans-serif;
   color: var(--text-color);
   background-color: transparent !important;
-  padding: 14px 30px;
-  font-size: 18px;
-  border: 1px solid #fff;
+  padding: 0.875rem 1.875rem;
+  font-size: 1.125rem;
+  border: 0.0625rem solid #fff;
 }
 @media (max-width: 35.9988rem) {
   .third-section .button-location a {
     font-size: 1rem;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
   }
 }
 
@@ -538,7 +538,7 @@ ul::after {
 .fourth-section .our-story-wrapper .above-title {
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 0.875rem;
   opacity: 40%;
 }
 @media (min-width: 62rem) {
@@ -553,7 +553,7 @@ ul::after {
 }
 @media (min-width: 62rem) {
   .fourth-section .our-story-wrapper .our-story-title {
-    font-size: 3.75rem;
+    font-size: 60px;
   }
 }
 .fourth-section .our-story-wrapper .our-story-desc {
@@ -576,7 +576,7 @@ ul::after {
   max-width: max-content;
 }
 .fourth-section .our-story-carousel-wrapper .carousel-img-label-container .carousel-label {
-  padding: 16px;
+  padding: 1rem;
   bottom: 0;
   width: 100%;
   background-color: #fff;
@@ -584,7 +584,7 @@ ul::after {
   color: var(--text-color);
 }
 .fourth-section .our-story-carousel-wrapper .carousel-img-label-container .carousel-label h5 {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .fourth-section .our-story-carousel-wrapper .carousel-img-label-container .carousel-label p {
   font-size: 1rem;
@@ -592,11 +592,11 @@ ul::after {
 .fourth-section .our-story-timeline-item img {
   width: 24%;
   border-radius: 50%;
-  border: 10px solid var(--dusty-blue);
+  border: 0.625rem solid var(--dusty-blue);
   margin: 0 auto;
 }
 .fourth-section .our-story-timeline-item .our-story-timeline-desc p {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 @media (min-width: 62rem) {
   .fourth-section .our-story-timeline-item .our-story-timeline-desc p {
@@ -606,21 +606,21 @@ ul::after {
   }
 }
 .fourth-section .our-story-margin {
-  margin: 180px 0;
+  margin: 11.25rem 0;
 }
 .fourth-section .our-story-divider {
   top: 50%;
   left: 50%;
-  width: 2px;
-  height: 800px;
+  width: 0.125rem;
+  height: 50rem;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.4);
 }
 .fourth-section .our-story-dot {
   top: 20%;
   left: 50%;
-  width: 25px;
-  height: 25px;
+  width: 1.5625rem;
+  height: 1.5625rem;
   border-radius: 50%;
   transform: translate(-50%, -50%);
   background-color: black;
@@ -632,20 +632,20 @@ ul::after {
   height: 100%;
 }
 .fifth-section .wedding-gallery-label {
-  padding-bottom: 25px;
+  padding-bottom: 1.5625rem;
 }
 .fifth-section .above-title {
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 0.9375rem;
   opacity: 40%;
 }
 .fifth-section .wedding-gallery-title {
-  font-size: 50px;
+  font-size: 3.125rem;
   font-family: "Great Vibes", cursive;
 }
 .fifth-section .wedding-gallery-desc {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: "Open Sans", sans-serif;
 }
 @media (min-width: 62rem) {
@@ -656,19 +656,19 @@ ul::after {
 }
 .fifth-section .wedding-gallery-content {
   grid-template-columns: 1fr;
-  gap: 10px;
+  gap: 0.625rem;
 }
 @media (min-width: 48rem) {
   .fifth-section .wedding-gallery-content {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    gap: 0.625rem;
   }
 }
 .fifth-section .wedding-gallery-content .gallery-link {
   height: 100%;
 }
 .fifth-section .wedding-gallery-content .gallery-link img {
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   width: 100%;
   height: auto;
 }
@@ -679,9 +679,9 @@ ul::after {
   font-family: "Open Sans", sans-serif;
   color: var(--text-color);
   background-color: transparent !important;
-  padding: 14px 30px;
-  font-size: 18px;
-  border: 1px solid #000;
+  padding: 0.875rem 1.875rem;
+  font-size: 1.125rem;
+  border: 0.0625rem solid #000;
 }
 
 .hero-banner {
@@ -726,21 +726,21 @@ ul::after {
   height: 100%;
 }
 .the-location .location-label {
-  padding-bottom: 25px;
+  padding-bottom: 1.5625rem;
 }
 .the-location .above-title {
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 0.9375rem;
   opacity: 40%;
 }
 .the-location .location-title {
-  font-size: 50px;
+  font-size: 3.125rem;
   font-family: "Cormorant Garamond", serif;
   font-style: italic;
 }
 .the-location .location-desc {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: "Open Sans", sans-serif;
   line-height: 2;
 }
@@ -752,19 +752,19 @@ ul::after {
 }
 .the-location .location-content {
   grid-template-columns: 1fr;
-  gap: 10px;
+  gap: 0.625rem;
 }
 @media (min-width: 48rem) {
   .the-location .location-content {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    gap: 0.625rem;
   }
 }
 .the-location .location-content .gallery-link {
   height: 100%;
 }
 .the-location .location-content .gallery-link img {
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   width: 100%;
   height: auto;
 }
@@ -810,7 +810,7 @@ ul::after {
   }
 }
 .six-section .best-wish-content .send-desc {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: "Open Sans", sans-serif;
 }
 @media (max-width: 35.9988rem) {
@@ -849,15 +849,15 @@ ul::after {
   }
 }
 .six-section .best-wish-content .best-wish-form-wrapper .best-wish-form .best-btn {
-  padding: 10px 50px;
-  border: 1px solid #fff;
-  border-radius: 5px;
+  padding: 0.625rem 3.125rem;
+  border: 0.0625rem solid #fff;
+  border-radius: 0.3125rem;
   font-family: "Open Sans", sans-serif;
 }
 @media (max-width: 35.9988rem) {
   .six-section .best-wish-content .best-wish-form-wrapper .best-wish-form .best-btn {
-    padding: 5px 30px;
-    font-size: 1rem;
+    padding: 0.3125rem 1.875rem;
+    font-size: 16px;
   }
 }
 .six-section .best-wish-img {
@@ -888,15 +888,20 @@ ul::after {
 .seventh-section .gift-ideas-wrapper .above-title {
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 0.9375rem;
   opacity: 40%;
 }
 .seventh-section .gift-ideas-wrapper .gift-ideas-title {
-  font-size: 50px;
+  font-size: 3.125rem;
   font-family: "Great Vibes", cursive;
 }
+@media (max-width: 35.9988rem) {
+  .seventh-section .gift-ideas-wrapper .gift-ideas-title {
+    font-size: 2.5rem;
+  }
+}
 .seventh-section .gift-ideas-wrapper .gift-ideas-desc {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: "Open Sans", sans-serif;
 }
 @media (max-width: 47.9988rem) {
@@ -939,13 +944,13 @@ ul::after {
   .seventh-section .introduction-wrapper .wed-introduction {
     width: 50%;
     margin: auto;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 2;
   }
 }
 .seventh-section .introduction-wrapper .wed-introduction span {
   font-family: "Cormorant Garamond", serif;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-style: italic;
 }
 .footer {
@@ -959,12 +964,12 @@ ul::after {
   transform: translate(-50%, -50%);
 }
 .footer .footer-title {
-  font-size: 50px;
+  font-size: 3.125rem;
   font-family: "Great Vibes", cursive;
 }
 .footer .footer-desc {
   color: var(--dusty-white);
-  font-size: 16px;
+  font-size: 1rem;
   font-family: "Open Sans", sans-serif;
 }
 .footer .footer-img {
@@ -992,7 +997,7 @@ ul::after {
 }
 .footer .socmed-insta,
 .footer .socmed-facebook {
-  padding: 0 5px;
+  padding: 0 0.3125rem;
 }
 .footer .socmed-insta a,
 .footer .socmed-facebook a {
@@ -1006,16 +1011,32 @@ ul::after {
 }
 @media (max-width: 47.9988rem) {
   .footer .footer-credits {
-    padding: 80px 0;
+    padding: 5rem 0;
   }
 }
 @media (max-width: 35.9988rem) {
   .footer .footer-credits {
-    padding: 5px 0;
+    padding: 0.3125rem 0;
   }
 }
+@media (min-width: 62rem) {
+  .footer .footer-credits {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.footer .footer-credits .credits-item {
+  padding: 0 20px;
+}
 .footer .credits-auth {
-  font-size: 12px;
+  font-size: 0.75rem;
+}
+.footer .credits-auth a {
+  color: var(--dusty-white);
+}
+.footer .credits-auth a:hover {
+  cursor: pointer;
 }
 .footer .github-icon {
   text-align: center;

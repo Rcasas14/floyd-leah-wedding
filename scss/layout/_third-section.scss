@@ -28,7 +28,7 @@
             font-size: 1rem;
 
             @include breakpoint-up(xl) {
-                font-size: 18px;
+                font-size: 1.125rem;
                 width: 50%;
                 margin: auto;
             }
@@ -39,7 +39,7 @@
             font-size: 3.125rem;
 
             @include breakpoint-down(ip-se) {
-                font-size: 30px;
+                font-size: 1.875rem;
             }
 
 
@@ -62,7 +62,7 @@
 
             h2 {
                 @include breakpoint-up(xl) {
-                    font-size: 20px;
+                    font-size: 1.25rem;
                 }
 
                 font-family: var.$open-sans;
@@ -74,8 +74,8 @@
 
     .location-map-wrapper {
         iframe {
-            width: 370px;
-            height: 410px;
+            width: 23.125rem;
+            height: 25.625rem;
 
             @include breakpoint-down(sm) {
                 width: 18.75rem;
@@ -122,13 +122,13 @@
             font-family: var.$open-sans;
             color: var(--text-color);
             background-color: transparent !important;
-            padding: 14px 30px;
-            font-size: 18px;
-            border: 1px solid #fff;
+            padding: .875rem 1.875rem;
+            font-size: 1.125rem;
+            border: .0625rem solid #fff;
 
             @include breakpoint-down(sm) {
                 font-size: 1rem;
-                padding: 10px 20px;
+                padding: .625rem 1.25rem;
             }
 
         }
