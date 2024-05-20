@@ -36,6 +36,20 @@
             img {
                 margin: auto;
                 width: 50%;
+
+            }
+
+            .paypal-img {
+                margin: auto;
+
+                @include breakpoint-up(md) {
+                    width: 70%;
+                }
+            }
+
+            .cbau-img {
+                margin: auto;
+                width: 55%;
             }
         }
     }

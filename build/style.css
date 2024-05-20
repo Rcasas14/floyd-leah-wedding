@@ -908,6 +908,18 @@ ul::after {
   margin: auto;
   width: 50%;
 }
+.seventh-section .gift-qr-wrapper .qr-code-img .paypal-img {
+  margin: auto;
+}
+@media (min-width: 48rem) {
+  .seventh-section .gift-qr-wrapper .qr-code-img .paypal-img {
+    width: 70%;
+  }
+}
+.seventh-section .gift-qr-wrapper .qr-code-img .cbau-img {
+  margin: auto;
+  width: 55%;
+}
 @media (min-width: 62rem) {
   .seventh-section .qr-codes-wrapper {
     display: flex;
