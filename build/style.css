@@ -904,27 +904,6 @@ ul::after {
   font-size: 1.125rem;
   font-family: "Open Sans", sans-serif;
 }
-@media (max-width: 47.9988rem) {
-  .seventh-section .gift-qr-wrapper {
-    padding: 1rem 0;
-  }
-}
-.seventh-section .gift-qr-wrapper .qr-code-img img {
-  margin: auto;
-  width: 50%;
-}
-.seventh-section .gift-qr-wrapper .qr-code-img .paypal-img {
-  margin: auto;
-}
-@media (min-width: 48rem) {
-  .seventh-section .gift-qr-wrapper .qr-code-img .paypal-img {
-    width: 70%;
-  }
-}
-.seventh-section .gift-qr-wrapper .qr-code-img .cbau-img {
-  margin: auto;
-  width: 55%;
-}
 @media (min-width: 62rem) {
   .seventh-section .qr-codes-wrapper {
     display: flex;
@@ -935,6 +914,45 @@ ul::after {
 }
 .seventh-section .qr-codes-wrapper .qr-code-label {
   font-size: 18px;
+}
+.seventh-section .qr-codes-wrapper .bank-detail {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+@media (max-width: 35.9988rem) {
+  .seventh-section .qr-codes-wrapper .bank-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.seventh-section .qr-codes-wrapper .bank-detail .paypal-img {
+  margin: 0 30px;
+  width: 50%;
+}
+.seventh-section .qr-codes-wrapper .paypal-noborder {
+  border: none !important;
+}
+.seventh-section .qr-codes-wrapper .bank-detail-wrapper {
+  border: solid 1px var(--text-color);
+  border-radius: 10px;
+  background-color: transparent;
+  margin: 0 20px;
+}
+@media (max-width: 35.9988rem) {
+  .seventh-section .qr-codes-wrapper .bank-detail-wrapper {
+    margin: 20px 0;
+  }
+}
+.seventh-section .qr-codes-wrapper .bank-detail-wrapper .card-body p {
+  padding: 0;
+  margin-bottom: 0;
+}
+.seventh-section .qr-codes-wrapper .bank-title {
+  font-family: "Open Sans", sans-serif;
+  color: var(--text-color);
 }
 .seventh-section .introduction-wrapper .wed-introduction {
   font-family: "Open Sans", sans-serif;

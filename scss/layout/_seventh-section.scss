@@ -19,7 +19,7 @@
             font-size: 3.125rem;
             font-family: var.$great-vibes;
 
-            @include breakpoint-down(sm){
+            @include breakpoint-down(sm) {
                 font-size: 2.5rem;
             }
         }
@@ -29,33 +29,6 @@
             font-family: var.$open-sans;
         }
 
-    }
-
-    .gift-qr-wrapper {
-        @include breakpoint-down(md) {
-            padding: 1rem 0;
-        }
-
-        .qr-code-img {
-            img {
-                margin: auto;
-                width: 50%;
-
-            }
-
-            .paypal-img {
-                margin: auto;
-
-                @include breakpoint-up(md) {
-                    width: 70%;
-                }
-            }
-
-            .cbau-img {
-                margin: auto;
-                width: 55%;
-            }
-        }
     }
 
     .qr-codes-wrapper {
@@ -70,6 +43,53 @@
         .qr-code-label {
             font-size: 18px;
         }
+
+        .bank-detail {
+            display: flex;
+            justify-content: start;
+            align-items: start;
+
+            @include breakpoint-down(sm) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .paypal-img {
+                margin: 0 30px;
+                width: 50%;
+            }
+
+
+        }
+        .paypal-noborder {
+            border: none !important;
+        }
+        .bank-detail-wrapper {
+            border: solid 1px var(--text-color);
+            border-radius: 10px;
+            background-color: transparent;
+            margin: 0 20px;
+
+            @include breakpoint-down(sm) {
+                margin: 20px 0;
+            }
+
+            .card-body {
+                p {
+                    padding: 0;
+                    margin-bottom: 0;
+                }
+            }
+
+        }
+
+        .bank-title {
+            font-family: var.$open-sans;
+            color: var(--text-color);
+        }
+
     }
 
     .introduction-wrapper {
